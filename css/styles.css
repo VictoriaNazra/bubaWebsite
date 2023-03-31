@@ -29,7 +29,8 @@ Colors
 Tipografias
 
 */
-/* Fonts */
+
+/***************   Fonts   **************/
 /* Fonts Titles*/
 h1{
     font-family: 'Abhaya Libre', serif;
@@ -58,6 +59,7 @@ h5{
     text-transform: uppercase;
     letter-spacing: 5,5%;
 }
+
 /* Fonts Body */
 .body16Regular{
     font-family: 'Open Sans', sans-serif;
@@ -80,7 +82,8 @@ h5{
     font-size: 1.4rem;
 }
 
-/* Buttons */
+
+/***************   Buttons   ***************/
 .primary{
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
@@ -145,7 +148,9 @@ h5{
 /* .btnIcon img{
     size: 100%;
 } */
-/* Header */
+
+
+/***************   Header   ***************/
 header{
     background-color: white;
     color: #171717;
@@ -174,7 +179,8 @@ nav .container_logo .logo{
     width: 100%;
     height: 100%;
 }
-/* Parte del medio de la navbar */
+
+/* Parte del medio de la navbar   ***************/
 .navLinks{
     width: 100%;
     display: flex;
@@ -182,7 +188,8 @@ nav .container_logo .logo{
     align-items: left;
     right: 8.3rem;
 }
-/* Nav del medio */
+
+/* Nav del medio ***************/
 nav .nav_containerLeft{
     display: flex;
     justify-content: space-between;
@@ -202,7 +209,7 @@ nav .nav_containerLeft{
     text-decoration: none;
     color: #171717;
 }
-/* Iconos derecha */
+/* Iconos derecha ***************/
 .nav_containerRight{
     display: flex;
     justify-content: space-between;
@@ -219,7 +226,8 @@ nav .nav_containerLeft{
 .navbar_icons img{
     width: 2.31rem;
 }
-/* Hero Index..................................... */
+
+/***************   Hero Index   ************** */
 .heroHome{
     width: 100%;
     height: 63.4rem;
@@ -261,7 +269,8 @@ nav .nav_containerLeft{
 .containerRight span{
     font-weight: bold;
 }
-/* Our Products................... */
+
+/* Our Products (Circulos)   ***************/
 .ourProducts{
     background-color: #FFFAF3;
     width: 100%;
@@ -300,7 +309,8 @@ nav .nav_containerLeft{
     width: 100%;
     border-radius: 100%;
 }
-/* Now Trending................... */
+
+/* Now Trending   ***************/
 .nowTrending{
     background-color: beige;
     width: 100%;
@@ -320,7 +330,8 @@ nav .nav_containerLeft{
     align-items: flex-start;
     flex-direction: column;
 }
-/* PRODUCT CARD.................. */
+
+/* Product Card   ***************/
 .container_productsCard{
     display: flex;
     align-items: center;
@@ -331,9 +342,11 @@ nav .nav_containerLeft{
 }
 .productsCard{
     width: 28.2rem;
-    height: 48.2rem;
-    border-radius: 10%;
-    box-shadow: 5px 5px 5px gray;
+    height: 46.2rem;
+    border-radius: 10px;
+    background-color: white;
+    /* box-shadow: 5px 5px 5px rgb(215, 9, 9); */
+    filter: drop-shadow(1.80966px 4.52416px 10.858px rgba(0, 0, 0, 0.15));
 }
 .cardImg{
     width: 28.2rem;
@@ -345,19 +358,30 @@ nav .nav_containerLeft{
 .cardInfo{
     width: 28.2rem;
     height: 20.5rem;
-    background-color: white;
-    border-radius: 10%;
+    /* background-color: white; */
     padding-top: 2.2rem;
     padding-bottom: 1.59rem;
     padding-right: 2.164rem;
     padding-left: 2.164rem;
     display: flex;
+    background-color: #171717;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
+.CardInfoElements{
+    width: 28.2rem;
+    height: 12.81rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 1.4rem;
+    
+}
 .cardInfo .cardText{
     height: 7rem;
+    gap: 12px;
 }
 .cardInfo .cardText h4{
     text-align: center;
@@ -368,7 +392,9 @@ nav .nav_containerLeft{
     font-weight: 400;
     font-size: 1.2rem;
     width: 18.2rem;
+    padding-bottom: 1.59rem;
     text-align: center;
+    color: #5B5A56;
 }
 .cardInfo .wrapper{
     border-radius: 34.82px;
@@ -398,7 +424,9 @@ nav .nav_containerLeft{
     font-weight: 600;
     font-size: 2.2rem;
 }
-/* Find your nearest Buba Store................*/
+
+
+/***************   Find your nearest Buba Store   ***************/
 .findNearStore{
     background-image: url(../assets/img/store1.png);
     width: 100%;
@@ -427,7 +455,8 @@ nav .nav_containerLeft{
 .findNearStore .right img{
     width: 100%;
 }
-/* Book a table.............................................. */
+
+/* Book a table ***************/
 .bookTable{
     width: 100%;
     height: 64.9rem;
@@ -468,7 +497,8 @@ nav .nav_containerLeft{
     align-items: flex-end;
     justify-content: center;
 }
-/* Register Now.............................................. */
+
+/***************   Register Now ***************/
 .registerNow{
     width: 100%;
     height: 36.6rem;
@@ -492,12 +522,8 @@ nav .nav_containerLeft{
 .registerNow h2{
     width: 43.7rem;
 }
-/* 
 
-Footer.....................................................................
-
-
- */
+/***************   FOOTER   ***************/
 footer{
     background-color: #323334;
     height: 44.21rem;
@@ -546,7 +572,7 @@ footer ul li a{
     justify-content: space-between;
     align-items: flex-start;
 }
-/* Footer Right .............*/
+/* Footer Right ***************/
 .footerRight{
     width: 82.3rem;
     height: 16.1rem;
@@ -617,7 +643,7 @@ About Us Page...................................................................
 .container_logo .logoFooter{
     width: 100%;
 }
-/* SECTIONS ABOUT US ..................... */
+/***************   SECTIONS ABOUT US    ***************/
 .aboutUs{
     display: flex;
     flex-direction: column;
@@ -711,7 +737,7 @@ Shop Page.......................................................................
     padding: 2rem;
     color: red;
 }
-/* Shop Container Right................... */
+/* Shop Container Right   ***************/
 .containerRight_shop{
     width: 100%;
     height: 100%;
@@ -777,7 +803,7 @@ Store Finder Page  .............................................................
     height: 72.8rem;
     margin: 2rem 3.5rem 2.8rem 8.3rem;
 }
-/* Search Bar..................................... */
+/* Search Bar   ***************/
 .container_storeFinderTop{
     width: 43.9rem;
     height: 3.29rem;
@@ -800,7 +826,7 @@ Store Finder Page  .............................................................
 .container_searchBar .iconSearchBar img{
     width: 100%;
 }
-/* Location cards............................... */
+/* Location cards   ***************/
 .locationCard{
     padding: 2.4rem;
 }
@@ -827,13 +853,7 @@ Store Finder Page  .............................................................
 .container_SFOptions ul li img{
     width: 2.1rem;
 }
-
-/* 
-
-LogIn Page ......................................................................
-
-
- */
+/***************   LogIn Page   ***************/
 .container_login{
     width: 136.6rem;
     height: 89.6rem;
@@ -843,7 +863,7 @@ LogIn Page .....................................................................
     padding: 0px;
     /* position: absolute; */
 }
-/* Imagen.................................... */
+/* Imagen  ***************/
 .container_loginLeft{
     width: 59.7rem;
     height: 89.6rem;
@@ -858,7 +878,7 @@ LogIn Page .....................................................................
 .container_loginLeft img{
     width: 100%;
 }
-/* Formulario.................................... */
+/* Formulario   ***************/
 .container_loginRight{
     width: 76.9rem;
     height: 89.6rem;
