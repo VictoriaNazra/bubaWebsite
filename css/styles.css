@@ -853,17 +853,19 @@ Store Finder Page  .............................................................
     width: 2.1rem;
 }
 /***************   LogIn Page   ***************/
-.container_login{
+/* .container_login{
     width: 136.6rem;
     height: 89.6rem;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
-    /* position: absolute; */
-}
+    position: absolute; 
+} */
+
+/* Formulario viejo, Sin Bootstrap ***************/
 /* Imagen  ***************/
-.container_loginLeft{
+/* .container_loginLeft{
     width: 59.7rem;
     height: 89.6rem;
     left: 0rem;
@@ -871,22 +873,56 @@ Store Finder Page  .............................................................
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 0px;
-    /* position: absolute; */
-}
+    padding: 0px; 
+    position: absolute;
+ } */
 .container_loginLeft img{
     width: 100%;
 }
-/* Formulario   ***************/
 .container_loginRight{
-    width: 76.9rem;
-    height: 89.6rem;
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; */
+    background-color: pink;
 }
-.loginForm{
+.formInputLogin{
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 24px;
+    font-size: 1.6rem;
+    color: #9C9C9C;
+    border-bottom: 1px solid #CDCDCD;
+    border-radius: 0px;
+    /* width: 100%; */
+}
+.formInputLoginText{  
+    font-size: 1.6rem;  
+}
+.container_loginForm{
+    width: 49.5rem;
+    /* height: 70.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    /* height: 71.1rem; */
+}
+.form-check-input{
+    height: 1.8rem;
+    width: 1.8rem;
+}
+.form-check-input:active{
+    color: red;
+}
+.form-check-label span{
+    color: #DA7E1E;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/*.loginForm{
     border: none;
     display: flex;
     justify-content: center;
@@ -941,11 +977,21 @@ fieldset{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-}
+}*/
+.container_signUpSocials{
+    height: 16.9rem;
+    margin: 3.2rem;
+} 
 .container_signUpSocials p{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 1.6rem;
-    padding: 3.4rem;
-    color: #CDCDCD;
+    color: #9C9C9C;
+} 
+.container_signUpSocials ul li a{
+    margin: 0.8rem;
 }
+
+.container_signUpSocials li{
+    list-style: none;
+} 

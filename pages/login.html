@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
@@ -42,13 +43,65 @@
         </nav>
     </header>
     <main>
-        <div class="container_login">
+<!-- Imagen y formulario nuevos, con bootstrap -->
+        <div class="grid row gap-0">
+            <div class="container_loginLeft container col-5 ">
+                <img src="../assets/img/products/bubbleteamocka.png" alt="bubble tea mocka">
+            </div>
+            <div class="container_loginRight d-flex flex-column justify-content-center align-items-center col-7">
+                <!-- FORMULARIO NUEVO, CON BOOTSTRAP -->
+                <form class="container_loginForm">
+                    <h2>Join the büba family</h2>
+                    <h3>Create account</h3>
+                    <div>
+
+                    </div>
+                    <!-- Casilleros para -->
+                    <div>
+                        <div class="row mb-5">
+                            <label for="inputNamel3" class="col-sm-2 col-form-label formInputLoginText">Name:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control formInputLogin" id="inputNamel3" placeholder="Write your full name" aria-label="Write your full name" aria-describedby="basic-addon2">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control formInputLogin" id="inputEmail3" placeholder="Write your email address" aria-label="Write your email address" aria-describedby="basic-addon2">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control border border-top-0 border-start-0 border-end-0 rounded-0 formInputLogin" id="inputPassword3" placeholder="Write a password of at least 8 characters" aria-label="Write a password of at least 8 characters" aria-describedby="basic-addon2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-sm-10 offset-sm-2">
+                            <div class="form-check">
+                                <input class="form-check-input mx-3" type="checkbox" id="gridCheck1">
+                                <label class="form-check-label body14Regular" for="gridCheck1">I accept the <span class="termslink">terms of use</span> and <span class="termslink">privacy policy</span></label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="primary loginFormBtn container-fluid px-5">Sign up</button>
+                    <div class="container_signUpSocials d-flex flex-column  justify-content-between align-items-center ">
+                        <p>Or Sign Up With</p>
+                        <ul class="d-flex">
+                            <li><a href="#"><img src="../assets/icons/iconGoogleColor.svg" alt="Twitter"></a></li>
+                            <li><a href="#"><img src="../assets/icons/iconFbColor.svg" alt="Facebook"></a></li>
+                        </ul>
+                        <p class="form-check-label span">Already have an account? <span class="termslink">Sing In</span></p>
+                    </div>
+                </form>
+<!-- FORMULARIO VIEJO, SIN BOOTSTRAP -->
+        <!-- <div class="container_login">
             <div class="container_loginLeft">
                 <img src="../assets/img/products/bubbleteamocka.png" alt="bubble tea mocka">
             </div>
-            <div class="container_loginRight">
-                <h2>Join the büba family</h2>
-                <form class="loginForm" action="#" method="post" enctype="text/plain">
+        <div class="container_loginRight container-fluid"> -->
+                <!-- <form class="loginForm" action="#" method="post" enctype="text/plain">
                     <fieldset>
                         <legend>Create account</legend>
                         <div class="container_formGroup">
@@ -80,8 +133,7 @@
                         </ul>
                         <p>Already have an account? <span class="termslink">Sing In</span></p>
                     </div>
-                    
-                </form>
+                </form> -->
             </div>
         </div>
         
@@ -142,5 +194,6 @@
             <p>Büba © – All rights reserved</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 </body>
 </html>
