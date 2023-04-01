@@ -51,42 +51,41 @@
             <div class="container_loginRight d-flex flex-column justify-content-center align-items-center col-7">
                 <!-- FORMULARIO NUEVO, CON BOOTSTRAP -->
                 <form class="container_loginForm">
-                    <h2>Join the büba family</h2>
-                    <h3>Create account</h3>
-                    <div>
-
-                    </div>
-                    <!-- Casilleros para -->
-                    <div>
-                        <div class="row mb-5">
-                            <label for="inputNamel3" class="col-sm-2 col-form-label formInputLoginText">Name:</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control formInputLogin" id="inputNamel3" placeholder="Write your full name" aria-label="Write your full name" aria-describedby="basic-addon2">
+                    <h2 class="pb-5">Join the büba family</h2>
+                    <h3 class="pb-5">Create account</h3>
+                    <div class="container_loginForm_data container d-flex flex-column  justify-content-between align-items-center">
+                        <!-- Casilleros para informacion -->
+                        <div class="container_casillerosParaInfo" style="width: 49.5rem;">
+                            <div class="row mb-5">
+                                <label for="inputNamel3" class="col-sm-2 col-form-label formInputLoginText">Name:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control formInputLogin" id="inputNamel3" placeholder="Write your full name" aria-label="Write your full name" aria-describedby="basic-addon2">
+                                </div>
                             </div>
-                        </div>
-                        <div class="row mb-3">
-                            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                            <div class="col-sm-10">
-                                <input type="email" class="form-control formInputLogin" id="inputEmail3" placeholder="Write your email address" aria-label="Write your email address" aria-describedby="basic-addon2">
+                            <div class="row mb-5">
+                                <label for="inputEmail3" class="col-sm-2 col-form-label formInputLoginText">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control formInputLogin" id="inputEmail3" placeholder="Write your email address" aria-label="Write your email address" aria-describedby="basic-addon2">
+                                </div>
                             </div>
-                        </div>
-                        <div class="row mb-3">
-                            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-                            <div class="col-sm-10">
-                                <input type="password" class="form-control border border-top-0 border-start-0 border-end-0 rounded-0 formInputLogin" id="inputPassword3" placeholder="Write a password of at least 8 characters" aria-label="Write a password of at least 8 characters" aria-describedby="basic-addon2">
+                            <div class="row mb-5">
+                                <label for="inputPassword3" class="col-sm-2 col-form-label formInputLoginText">Password</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control border border-top-0 border-start-0 border-end-0 rounded-0 formInputLogin" id="inputPassword3" placeholder="Write a password of at least 8 characters" aria-label="Write a password of at least 8 characters" aria-describedby="basic-addon2">
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="row mb-3">
-                        <div class="col-sm-10 offset-sm-2">
-                            <div class="form-check">
+                        <div>
+                            <div class="form-check pb-5">
                                 <input class="form-check-input mx-3" type="checkbox" id="gridCheck1">
                                 <label class="form-check-label body14Regular" for="gridCheck1">I accept the <span class="termslink">terms of use</span> and <span class="termslink">privacy policy</span></label>
                             </div>
                         </div>
                     </div>
-                    <button type="submit" class="primary loginFormBtn container-fluid px-5">Sign up</button>
-                    <div class="container_signUpSocials d-flex flex-column  justify-content-between align-items-center ">
+                    <button type="submit" class="primary loginFormBtn container-fluid px-5 mb-5">Sign up</button>
+                    <div class="container_signUpSocials d-flex flex-column  justify-content-between align-items-center">
                         <p>Or Sign Up With</p>
                         <ul class="d-flex">
                             <li><a href="#"><img src="../assets/icons/iconGoogleColor.svg" alt="Twitter"></a></li>
@@ -94,6 +93,9 @@
                         </ul>
                         <p class="form-check-label span">Already have an account? <span class="termslink">Sing In</span></p>
                     </div>
+
+                    </div>
+                    
                 </form>
 <!-- FORMULARIO VIEJO, SIN BOOTSTRAP -->
         <!-- <div class="container_login">

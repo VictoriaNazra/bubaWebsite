@@ -909,6 +909,9 @@ Store Finder Page  .............................................................
     justify-content: space-between; */
     /* height: 71.1rem; */
 }
+.container_loginForm_data div .row{
+    margin-bottom: 3.4rem;
+}
 .form-check-input{
     height: 1.8rem;
     width: 1.8rem;
@@ -980,7 +983,6 @@ fieldset{
 }*/
 .container_signUpSocials{
     height: 16.9rem;
-    margin: 3.2rem;
 } 
 .container_signUpSocials p{
     font-family: 'Open Sans', sans-serif;
