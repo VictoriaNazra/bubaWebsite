@@ -879,13 +879,13 @@ Store Finder Page  .............................................................
 .container_loginLeft img{
     width: 100%;
 }
-.container_loginRight{
-    /* display: flex;
+/* .container_loginRight{
+    display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column; */
-    background-color: pink;
-}
+    flex-direction: column; 
+    background-color: pink; 
+} */
 .formInputLogin{
     border: none;
     font-family: 'Open Sans', sans-serif;
@@ -915,9 +915,6 @@ Store Finder Page  .............................................................
 .form-check-input{
     height: 1.8rem;
     width: 1.8rem;
-}
-.form-check-input:active{
-    color: red;
 }
 .form-check-label span{
     color: #DA7E1E;
