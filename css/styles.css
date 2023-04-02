@@ -344,7 +344,7 @@ nav #menuToggle, nav label{
 }
 
 /* Now Trending   ***************/
-.nowTrending {
+.nowTrending_wrapper {
     background-color: beige;
     width: 100%;
     padding-top: 7.7rem;
@@ -372,7 +372,6 @@ nav #menuToggle, nav label{
     width: auto;
     padding-top: 4.8rem;
     padding-bottom: 6.4rem;
-    background-color: pink;
     gap: 2.4rem;
 }
 .productsCard{
@@ -1048,9 +1047,10 @@ fieldset{
 }
 @media(max-width:1024px){
 
+     /* Nav *****************/
     /****************** Home *****************/
 
-    /* Nav *****************/
+
 
 
     /* Now trending *****************/
@@ -1063,7 +1063,6 @@ fieldset{
         gap: 2.4rem;
         padding-top: 4.8rem;
         padding-bottom: 6.4rem;
-        background-color: lightblue;
     }
     .cardHidden{
         display: none;
@@ -1088,11 +1087,29 @@ fieldset{
     /* menu hamburguesa */
     nav label{
         display: inline-flex;
-        color: red;
         cursor: pointer;
     }
     nav #menuToggle:checked ~ .menu{
         height: 100%;
+    }
+
+/****************** Home *****************/
+
+/* Now trending *****************/
+    .nowTrending_wrapper {
+    display: block;
+    padding: 7.7rem 3.5rem;
+    overflow-x: auto;
+}
+    .nowTrending_wrapper ::-webkit-scrollbar{
+    width: 0;
+}
+    .cardHidden{
+        display:block
+    }
+
+    .nowTrending_wrapper button{
+        display: none;
     }
 
     /* Footer *****************/
