@@ -309,11 +309,11 @@ nav #menuToggle, nav label{
     width: 100%;
     height: 43.9rem;
 }
-.ourProducts .element{
+.ourProducts .element {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 9.3rem 37.59rem;
+    padding: 9.3rem 0;
 }
 .ourProducts .element h2{
     text-align: center;
@@ -490,14 +490,17 @@ nav #menuToggle, nav label{
 }
 
 /* Book a table ***************/
-.bookTable{
+.bookTable {
     width: 100%;
     height: 64.9rem;
     background-color: #FFFAF3;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
+    gap: 2.2rem;
+    padding: 8.4rem;
 }
+
 .bookTable div{
     width: 57rem;
     height: 39.3rem;
@@ -517,18 +520,18 @@ nav #menuToggle, nav label{
     justify-content: space-between;
     flex-direction: column;
 }
-.bookTable .right{
+.bookTable .right {
     background-image: url(../assets/img/menu.png);
     width: 57rem;
     height: 39.3rem;
     border-radius: 12px;
-    background-size: 100%;
-    background-position-y: 0%;
+    background-size: 120%;
     background-repeat: no-repeat;
     padding-bottom: 4.71rem;
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    background-position-x: center;
 }
 
 /***************   Register Now ***************/
@@ -1110,6 +1113,45 @@ fieldset{
 
     .nowTrending_wrapper button{
         display: none;
+    }
+
+/* find Near Store *****************/
+
+.findNearStore .right {
+    width: 0rem;
+    height: 0rem;
+    display: none;
+}
+    .findNearStore .right img {
+        display: none;
+    }
+
+/* Book a table *****************/
+
+.bookTable {
+    height: 41rem;
+}
+
+    .bookTable .left div {
+        width: 23.5rem;
+        height: 27.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 3.2rem;
+    }
+
+    .bookTable .left img {
+        width: 10rem;
+    }
+
+    .bookTable div{
+        height: 23.2rem;
+    }
+
+    .bookTable .right {
+        height: 23.2rem;
     }
 
     /* Footer *****************/
