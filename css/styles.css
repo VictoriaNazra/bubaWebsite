@@ -558,7 +558,7 @@ nav #menuToggle, nav label{
 /***************   FOOTER   ***************/
 footer{
     background-color: #323334;
-    height: 44.21rem;
+    height: auto;
     color: white;
 }
 footer .container_footer{
@@ -1080,7 +1080,7 @@ fieldset{
 
 @media(max-width:768px){
     
-    /* Nav *****************/
+    /******************* Nav *****************/
     nav .menu{
         width: 100%;
         height: 0;
@@ -1100,6 +1100,25 @@ fieldset{
     nav #menuToggle:checked ~ .menu{
         height: 100%;
     }
+
+/******************* footer *****************/
+
+footer .container_footer {
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+.footerLeft .footerLeftText {
+    align-items: center;
+}
+
+element.style {
+}
+.footerLeft {
+    align-items: center;
+}
+
+
+
 
 /****************** Home *****************/
 
