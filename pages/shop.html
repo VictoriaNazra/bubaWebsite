@@ -12,32 +12,33 @@
 </head>
 <body>
 <!-- Header -->
-    <header>
+    <header class="nav-wrapper">
         <nav>
             <div class="container_logo">
                 <a href="../index.html"><img class="logo" src="../assets/icons/iconLogo.png" alt="brand logo"></a>
             </div>
-            <div class="navLinks">
+            <!-- Para el menu hamburguesa -->
+            <input type="checkbox" name="" id="menuToggle">
+            <label for="menuToggle"><img class="iconMenuHamburguesa" src="../assets/icons/iconHamburguerMenu.png" alt=""></label>
             <!--nav del medio  -->
-                <div class="nav_containerLeft">
-                    <ul class="navbar">
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="./shop.html">Shop</a></li>
-                        <li><a href="#">Reservations</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="./storeFinder.html"><img src="../assets/icons/iconLocation.svg" alt="Icon Location">Store Finder</a></li>
-                        <li><a href="./aboutUs.html">About Us</a></li>
-                    </ul>
-                </div>
+            <div class="menu nav_containerLeft">
+                <ul class="navbar">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./shop.html">Shop</a></li>
+                    <li><a href="#">Reservations</a></li>
+                    <li><a class="menuHiddenMediaQ" href="#">Menu</a></li>
+                    <li><a href="./storeFinder.html"><img class="IconLocation" src="../assets/icons/iconLocation.svg" alt="Icon Location">Store Finder</a></li>
+                    <li><a class="menuHiddenMediaQ" href="./aboutUs.html">About Us</a></li>
+                </ul>
+            </div>
             <!--Iconos derecha  -->
-                <div class="nav_containerRight">
-                    <ul class="navbar_icons">
-                        <li><a href="#"><img class="iconsNav" src="../assets/icons/IconSearch.svg" alt="Search"></a></li>
-                        <li><a href="#"><img class="iconsNav" src="../assets/icons/iconUser.svg" alt="Your account"></a></li>
-                        <li><a href="#"><img class="iconsNav" src="../assets/icons/IconCart.svg" alt="Your cart"></a></li>
-                        <li><a href="./login.html"><button class="primaryIconRight"><img src="../assets/icons/iconCartWhite.png" alt="Shopping Cart" class="btnIcon">Login</button></a></li>
-                    </ul>
-                </div>
+            <div class="menu nav_containerRight">
+                <ul class="navbar_icons">
+                    <li><a href="#"><img class="iconsNav" src="../assets/icons/IconSearch.svg" alt="Search"></a></li>
+                    <li><a href="#"><img class="iconsNav" src="../assets/icons/iconUser.svg" alt="Your account"></a></li>
+                    <li><a href="#"><img class="iconsNav" src="../assets/icons/IconCart.svg" alt="Your cart"></a></li>
+                    <li><a href="./login.html"><button class="primaryIcon"><img src="../assets/iconLogin.svg" alt="Shopping Cart" class="btnIcon iconNoColor">Login</button></a></li>
+                </ul>
             </div>
         </nav>
     </header>
