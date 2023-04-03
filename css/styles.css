@@ -95,7 +95,7 @@ h5{
     border: none;
     padding: 12px 32px;
 }
-.primaryIconRight{
+.primaryIcon {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 1.6rem;
@@ -105,21 +105,13 @@ h5{
     outline: none;
     border: none;
     padding: 12px 32px;
-}
-.primaryIconLeft{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    font-size: 1.6rem;
-    color: white;
-    background-color: #363030;
-    border-radius: 70px;
-    outline: none;
-    border: none;
-    padding: 12px 32px;
-    /* 
-    Ver como hacer para que el icono del boton y el texto se separen
     display: flex;
-    justify-content: space-evenly; */
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.btnIconRight {
+    flex-direction: row-reverse;
 }
 .secondary{
     font-family: 'Open Sans', sans-serif;
@@ -139,6 +131,12 @@ h5{
     background-color: #B6C37F;
     padding: 0.5rem;
 }
+
+.iconNoColor{
+    border-radius: 0%;
+    background-color: transparent;
+}
+
 .container_btn{
     display: flex;
     align-items: center;
@@ -170,25 +168,6 @@ nav{
     font-size: 1.6rem;
 }
 
-/* header{
-    background-color: white;
-    color: #171717;
-    font-size: 1.6rem;
-    width: 100%;
-    height: 7.2rem;    
-    padding: 2.4rem 8.3rem;
-    margin: 0 auto;
-    border-bottom: 1px solid #E7E7E7;
-    display: flex;
-    align-items: center;
-} */
-/* nav{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 1.514rem 8.3rem;
-} */
 
  /* Logo Nav ****************/
 nav .container_logo{
@@ -201,7 +180,6 @@ nav .container_logo .logo{
     width: 100%;
     height: 100%;
 }
-
 
 
 /* Nav del medio ***************/
@@ -224,6 +202,10 @@ nav .nav_containerLeft{
 .navbar li a{
     text-decoration: none;
     color: #171717;
+}
+
+.IconLocation{
+    padding-right: 0.7rem;
 }
 /* Iconos derecha ***************/
 .nav_containerRight{
@@ -251,50 +233,46 @@ nav #menuToggle, nav label{
 }
 
 /***************   Hero Index   ************** */
-.heroHome{
+.heroHome {
     width: 100%;
     height: 63.4rem;
     background-color: #F3F5F2;
-    /* display: flex;
-    justify-content: space-between; */
     display: grid;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(7,1fr);
 }
-.heroHome .containerLeft{
-    width: 52.6rem;
+.heroHome .containerLeft {
+    background-color: pink;
+    width: auto;
     grid-column-start: 1;
     grid-column-end: 5;
-    grid-row-start: 1;
+    grid-row-start: 2;
     grid-row-end: 7;
+    color: pink;
 }
 .heroHome .containerLeft img{
-    width: 139%;
+    width: 133%;
 }
-.heroHome .containerRight{
-    width:85rem;
-    height: 63.4rem;
-    background-color: #F3F5F2;
-    grid-column-start: 5;
+.heroHome .containerRight {
+    background-color: lightblue;
+    grid-column-start: 7;
     grid-column-end: 12;
-    grid-row-start: 1;
+    grid-row-start: 2;
     grid-row-end: 7;
     align-items: center;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
 }
-.heroHome .containerRight .element{
-    padding-left: 11.8rem;
-    padding-right: 27.2rem;
+.heroHome .containerRight .element {
     padding-top: 16.8rem;
+    max-width: 46rem;
     padding-bottom: 16.8rem;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-
 }
+
 .heroHome .containerRight .element P{
     padding: 3.2rem;
 }
@@ -376,7 +354,7 @@ nav #menuToggle, nav label{
 }
 .productsCard{
     width: 28.2rem;
-    height: 46.2rem;
+    height: 47.5rem;
     border-radius: 10px;
     background-color: white;
     /* box-shadow: 5px 5px 5px rgb(215, 9, 9); */
@@ -607,6 +585,7 @@ footer ul li a{
 /* Footer Right ***************/
 .footerRight{
     width: 82.3rem;
+    max-width: 65rem;
     height: 16.1rem;
     display: flex;
     justify-content: space-between;
@@ -1177,6 +1156,36 @@ element.style {
     .bookTable .right {
         height: 23.2rem;
     }
+
+    /* Register Now *****************/
+
+
+}
+
+@media(max-width:375px){
+    
+    /******************* Nav *****************/
+    
+
+/******************* footer *****************/
+
+
+
+/****************** Home *****************/
+
+/* Hero ******************/
+.container_btn {
+    flex-direction: column;
+    gap: 1.1rem;
+}
+/* Now trending *****************/
+
+
+/* find Near Store *****************/
+
+
+/* Book a table *****************/
+
 
     /* Register Now *****************/
 
