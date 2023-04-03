@@ -65,21 +65,27 @@ h5{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 1.6rem;
+    line-height: 24px;
+    color: #5B5A56;
+
 }
 .body16Bold{
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 1.6rem;
+    line-height: 24px;
 }
 .body14Regular{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 1.4rem;
+    line-height: 24px;
 }
 .body14Bold{
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 1.4rem;
+    line-height: 24px;
 }
 
 
@@ -618,12 +624,7 @@ footer ul li a{
     font-size: 1.2rem;
     font-weight: bold;
 }
-/* 
-
-About Us Page.....................................................................
-
-
- */
+/****************   About Us Page   ****************/
 .heroAboutUs{
     width: 100%;
     height: 21.3rem;
@@ -659,42 +660,35 @@ About Us Page...................................................................
     flex-direction: column;
     align-items: flex-start;
     padding: 0rem;
+    background-color: #F9F3DB;
     /* justify-content: flex-start; */
 }
-.aboutUs .container{
+.aboutUs .container {
     width: 100%;
-    height: 61.3rem;
+    height: 100%;
     padding-top: 8rem;
     padding-bottom: 6.4rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F9F3DB;
+    flex-wrap: wrap;
 }
 
 .flipped{
     flex-direction: row-reverse;
+    background-color: white;
 } 
-.container_aboutUsImg{
-    width: 63.1rem;
-    padding-left: 8.2rem;
-    background-color: #F9F3DB;
-}
 .container_aboutUsImg img{
-    width: 54.9rem;
     height: 46.8rem;
     border-radius: 13.5px;
 }
-.aboutUsInfo{
-    width: 73.5rem;
-    height: 46.9rem;
+.aboutUsInfo {
     border-radius: 13.6px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #F9F3DB;
-    gap: 22.3px;
+    padding-inline: 10rem;
 }
 .container_aboutUsInfo{
     height: 27rem;
@@ -932,7 +926,6 @@ Store Finder Page  .............................................................
     font-weight: bold;
     text-decoration: underline;
 }
-
 /*.loginForm{
     border: none;
     display: flex;
@@ -1059,12 +1052,26 @@ fieldset{
 .registerNow div {
         padding-left: 11.2rem;
     }
+
+ /****************   About Us Page   ****************/
+.container_aboutUsImg img {
+    height: 19.3rem;
+}
+
 }
 
 
 @media(max-width:768px){
     
     /******************* Nav *****************/
+    nav .nav_containerLeft {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 2.5rem;
+    }
+    }
     nav .menu{
         width: 100%;
         height: 0;
@@ -1083,7 +1090,13 @@ fieldset{
     }
     nav #menuToggle:checked ~ .menu{
         height: 100%;
+        border-top: 1px solid #E7E7E7;
     }
+    
+    .menuHiddenMediaQ{
+        display: block
+    }
+    
 
 /******************* footer *****************/
 
@@ -1192,9 +1205,23 @@ footer .container_footer {
 
     /* Register Now *****************/
 
+ /****************   About Us Page   ****************/
+.container_aboutUsInfo {
+    height: 27rem;
+    width: 42.6rem;
+
+}
+.aboutUsInfo {
+    padding-inline: 3.4rem;
+}
+
+
+
 
 }
 
+
+/* PHONE BREAKPOINT */
 @media(max-width:375px){
     
     /******************* Nav *****************/
