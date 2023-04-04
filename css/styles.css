@@ -245,25 +245,18 @@ nav #menuToggle, nav label{
     width: 100%;
     height: 63.4rem;
     background-color: #F3F5F2;
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(7,1fr);
+    display: flex
 }
 .heroHome .containerLeft {
-    width: auto;
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 7;
+    display: flex;
+    width: 40%;
+    align-items: center;
 }
 .heroHome .containerLeft img{
-    width: 133%;
+    width: 100%;
 }
 .heroHome .containerRight {
-    grid-column-start: 7;
-    grid-column-end: 12;
-    grid-row-start: 2;
-    grid-row-end: 7;
+    width: 60%;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -1073,14 +1066,14 @@ fieldset{
 }
 }
 @media(max-width:1024px){
+ /****************** Home *****************/
 
-     /* Nav *****************/
-    /****************** Home *****************/
+/* hero ******************/
+.heroHome .containerLeft img {
+    width: 133%;
+}
 
-
-
-
-    /* Now trending *****************/
+ /* Now trending *****************/
     .container_productsCard {
         display: flex;
         align-items: center;
@@ -1152,6 +1145,11 @@ fieldset{
         display: block
     }
     
+/********************   HERO *********************/
+.heroHome .containerLeft img {
+    width: 133%;
+    transform: translateX(-50px);
+}
 
 /******************* footer *****************/
 
@@ -1278,22 +1276,16 @@ footer .container_footer {
 
 /* PHONE BREAKPOINT */
 @media(max-width:375px){
-    
-    /******************* Nav *****************/
-    
-
-/******************* footer *****************/
-
-
-
 /****************** Home *****************/
 
 /* Hero ******************/
 .heroHome {
     display: flex;
 }
-.heroHome .containerLeft{
-    display: none;
+.heroHome .containerLeft {
+    display: flex;
+    width: 40%;
+    align-items: flex-start;
 }
 .heroHome .containerRight {
     grid-column-start: 2;
@@ -1306,7 +1298,7 @@ footer .container_footer {
 }
 
 h1 {
-    font-size: 3.4rem;
+    font-size: 2.4rem;
     width: 32.2rem;
 }
 .container_btn {
