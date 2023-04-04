@@ -287,10 +287,12 @@ nav #menuToggle, nav label{
 }
 
 /* Our Products (Circulos)   ***************/
-.ourProducts{
+.ourProducts {
     background-color: #FFFAF3;
     width: 100%;
+    display: flex;
     height: 43.9rem;
+    justify-content: center;
 }
 .ourProducts .element {
     display: flex;
