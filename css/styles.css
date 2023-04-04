@@ -1133,7 +1133,7 @@ footer .container_footer {
 .container_ourProductsCard {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-center;
     width: auto;
     overflow-x: auto;
     margin-left: 0rem;
@@ -1273,6 +1273,9 @@ h1 {
     width: 100%;
 }
 /* Our products ******************/
+.container_ourProductsCard {
+    justify-content: flex-start;
+}
 /* Now trending *****************/
 
 
