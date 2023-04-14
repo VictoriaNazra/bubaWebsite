@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+  "sass": "^1.62.0"
+  },
+  
+  "version": "1.0.0",
+  "scripts": {
+  "sass": "sass sass/index.scss css/index.css -w"
+  },
+  
+  "name": "bubawebsite"
+  }
