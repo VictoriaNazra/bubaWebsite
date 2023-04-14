@@ -5,7 +5,7 @@
   
   "version": "1.0.0",
   "scripts": {
-  "sass": "sass sass/index.scss css/index.css -w"
+  "sass": "scss scss/styles.scss css/styles.css -w"
   },
   
   "name": "bubawebsite"
