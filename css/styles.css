@@ -97,29 +97,58 @@ html {
   width: 100%;
   height: 100%;
 }
-.nav-wrapper .nav_containerLeft {
+.nav-wrapper nav .nav_containerLeft {
   display: flex;
   direction: none;
   flex-wrap: none;
   justify-content: space-between;
   align-items: center;
-  gap: none;
+  gap: 0rem;
 }
-.nav-wrapper .nav_containerLeft .navbar {
+.nav-wrapper nav .nav_containerLeft .navbar {
   display: flex;
-  direction: none;
-  flex-wrap: none;
-  justify-content: none;
-  align-items: none;
+  direction: row;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: normal;
   gap: 2.4rem;
   list-style: none;
 }
-.nav-wrapper .nav_containerLeft .navbar li a {
+.nav-wrapper nav .nav_containerLeft .navbar li a {
   text-decoration: none;
   color: #171717;
 }
-.nav-wrapper .nav_containerLeft .navbar li a .IconLocation {
+.nav-wrapper nav .nav_containerLeft .navbar li a .IconLocation {
   padding-right: 0.7rem;
+}
+.nav-wrapper nav .nav_containerRight {
+  display: flex;
+  direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0rem;
+}
+.nav-wrapper nav .nav_containerRight ul {
+  list-style: none;
+  display: flex;
+  direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.4rem;
+}
+.nav-wrapper nav .nav_containerRight ul li a img {
+  width: 2.31rem;
+}
+.nav-wrapper nav #menuToggle {
+  display: none;
+}
+.nav-wrapper nav label {
+  display: none;
+}
+.nav-wrapper nav label img {
+  height: 2.6rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

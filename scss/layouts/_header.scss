@@ -5,12 +5,12 @@
     background-color: white;
     border-bottom: 1px solid $color-borderLine;
 
-    // nav izquierda
     nav{
         @include flex(column,wrap,space-between,center,none);
         color: $color-blackTitles;
         padding: 1rem 8.3rem;
-
+        
+    // nav izquierda
         .container_logo{
             width: 7.7rem;
             height: 4.17rem;
@@ -21,23 +21,51 @@
                 }
             }
         }
-    }
-
-    // nav medio
-    .nav_containerLeft{
-        @include flex(none,none,space-between,center,none);
+        // nav medio
+        .nav_containerLeft{
+            @include flex(none,none,space-between,center,0rem);
         
-        .navbar{
-            @include flex(none,none,none,none,2.4rem);
-            list-style: none;
-            li{
-                a{
-                    text-decoration: none;
-                    color: $color-blackTitles;
-                    .IconLocation{
-                        padding-right: 0.7rem;
+            .navbar{
+                @include flex(row,nowrap,normal,normal,2.4rem);
+                list-style: none;
+            
+                li{
+                    a{
+                        text-decoration: none;
+                        color: $color-blackTitles;
+                        .IconLocation{
+                            padding-right: 0.7rem;
+                        }
                     }
                 }
+            }
+        }
+        // nav derecha
+        .nav_containerRight{
+            @include flex(row,nowrap,space-between,center,0rem);
+
+            ul{
+                list-style: none;
+                @include flex(row,nowrap,space-between,center,2.4rem);
+
+                li{
+                    a{
+                        img{
+                            width: 2.31rem;
+                        }
+                    }
+                }
+            }
+        }
+        // menu hamburguesa
+        #menuToggle{
+            display: none;
+        }
+        label{
+            display: none;
+            
+            img{
+                height: 2.6rem;
             }
         }
     }
