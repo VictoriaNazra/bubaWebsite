@@ -1,9 +1,15 @@
-@import "./base/type";
 @import "./utilities/variables";
 @import "./utilities/mixins";
+@import "./base/type";
+@import "./components/buttons";
+@import "./components/bootstrap";
 @import "./base/reset";
 @import "./layouts/header";
 @import "./layouts/main-index";
+@import "./layouts/main-aboutUs";
+@import "./layouts/main-login";
+@import "./layouts/main-shop";
+@import "./layouts/main-storeFinder";
 @import "./layouts/footer";
 @import "./layouts/mediaQ1024";
 @import "./layouts/mediaQ768";

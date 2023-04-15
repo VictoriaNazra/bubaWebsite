@@ -1,4 +1,55 @@
-*{
+@mixin font-stack-titles($font-size) {
     font-family: 'Abhaya Libre', serif;
+    font-weight: bold;
+    font-size: $font-size;
+}
+
+@mixin font-stack-body($font-weight,$font-size) {
     font-family: 'Open Sans', sans-serif;
+    line-height: 2.4rem;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    color: $color-blackBody;
+}
+
+//Clases
+
+h1{
+    @include font-stack-titles(4.8rem)
+}
+
+h2{
+    @include font-stack-titles(3.4rem)
+}
+
+h3{
+    @include font-stack-titles(2.5rem)
+}
+
+h4{
+    @include font-stack-titles(2rem)
+}
+
+h5{
+    @include font-stack-titles(1.6rem);
+    text-transform: uppercase;
+    letter-spacing: 5,5%
+}
+
+// Body
+
+.body16Regular{
+    @include font-stack-body(400, 1.6rem);
+}
+
+.body16Bold{
+    @include font-stack-body(bold, 1.6rem);
+}
+
+.body14Regular{
+    @include font-stack-body(400, 1.4rem);
+}
+
+.body14Bold{
+    @include font-stack-body(bold, 1.4rem);
 }

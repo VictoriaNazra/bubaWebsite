@@ -1,0 +1,47 @@
+.nav-wrapper{
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: white;
+    border-bottom: 1px solid $color-borderLine;
+
+    // nav izquierda
+    nav{
+        @include flex(column,wrap,space-between,center,none);
+        color: $color-blackTitles;
+        padding: 1rem 8.3rem;
+
+        .container_logo{
+            width: 7.7rem;
+            height: 4.17rem;
+            
+            a{
+                .logo{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    // nav medio
+    .nav_containerLeft{
+        @include flex(none,none,space-between,center,none)
+
+        .navbar{
+            @include flex(none,none,none,none,2.4rem)
+            list-style: none;
+
+            li{
+                a{
+                    text-decoration: none;
+                    color: $color-blackTitles;
+
+                    .IconLocation{
+                        padding-right: 0.7rem;
+                    }
+                }
+            }
+        }
+    }
+}

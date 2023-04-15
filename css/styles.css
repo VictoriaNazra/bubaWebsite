@@ -1,9 +1,104 @@
+h1 {
+  font-family: 'Abhaya Libre', serif;
+  font-weight: bold;
+  font-size: 4.8rem; }
+
+h2 {
+  font-family: 'Abhaya Libre', serif;
+  font-weight: bold;
+  font-size: 3.4rem; }
+
+h3 {
+  font-family: 'Abhaya Libre', serif;
+  font-weight: bold;
+  font-size: 2.5rem; }
+
+h4 {
+  font-family: 'Abhaya Libre', serif;
+  font-weight: bold;
+  font-size: 2rem; }
+
+h5 {
+  font-family: 'Abhaya Libre', serif;
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 5,5%; }
+
+.body16Regular {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 2.4rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #5B5A56; }
+
+.body16Bold {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 2.4rem;
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #5B5A56; }
+
+.body14Regular {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 2.4rem;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #5B5A56; }
+
+.body14Bold {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 2.4rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #5B5A56; }
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Abhaya Libre', serif;
-  font-family: 'Open Sans', sans-serif; }
+  box-sizing: border-box; }
 
 html {
   font-size: 62.5%; }
+
+.nav-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: white;
+  border-bottom: 1px solid #E7E7E7; }
+  .nav-wrapper nav {
+    display: flex;
+    direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: none;
+    color: #171717;
+    padding: 1rem 8.3rem; }
+    .nav-wrapper nav .container_logo {
+      width: 7.7rem;
+      height: 4.17rem; }
+      .nav-wrapper nav .container_logo a .logo {
+        width: 100%;
+        height: 100%; }
+  .nav-wrapper .nav_containerLeft {
+    display: flex;
+    direction: none;
+    flex-wrap: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: none; }
+    .nav-wrapper .nav_containerLeft .navbar {
+      display: flex;
+      direction: none;
+      flex-wrap: none;
+      justify-content: none;
+      align-items: none;
+      gap: 2.4rem;
+      list-style: none; }
+      .nav-wrapper .nav_containerLeft .navbar li a {
+        text-decoration: none;
+        color: #171717; }
+        .nav-wrapper .nav_containerLeft .navbar li a .IconLocation {
+          padding-right: 0.7rem; }
