@@ -1,12 +1,20 @@
 {
-  "dependencies": {
-  "sass": "^1.62.0"
-  },
-  
+  "name": "bubawebsite",
   "version": "1.0.0",
+  "description": "El proyecto trata sobre el UX/UI Design y el desarrollo del sitio web de la tienda Buba, que se especializa en venta de bubble tea, café, entre otros.",
+  "main": "index.js",
   "scripts": {
-  "sass": "scss scss/styles.scss css/styles.css -w"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --include-path scss ./scss/styles.scss ./css/styles.css",
+    "watch-css":"nodemon -e scss -x \"npm run build-css\""
   },
-  
-  "name": "bubawebsite"
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.62.0"
+  },
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.22"
   }
+}
