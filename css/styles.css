@@ -23,11 +23,14 @@ h4 {
 }
 
 h5 {
-  font-family: "Abhaya Libre", serif;
-  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  line-height: 2.4rem;
+  font-weight: 500;
   font-size: 1.6rem;
+  color: #5B5A56;
   text-transform: uppercase;
-  letter-spacing: 5, 5%;
+  letter-spacing: 0.055em;
+  color: black;
 }
 
 .body16Regular {
@@ -84,7 +87,7 @@ h5 {
 
 .btn-primaryIcon {
   display: flex;
-  direction: row;
+  flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
@@ -93,7 +96,7 @@ h5 {
 
 .btn-iconRight {
   display: flex;
-  direction: row;
+  flex-direction: row;
   flex-wrap: nowrap;
   justify-content: row-reverse;
   align-items: center;
@@ -122,7 +125,7 @@ h5 {
 
 .container_btn {
   display: flex;
-  direction: row;
+  flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
@@ -154,11 +157,11 @@ html {
 }
 .nav-wrapper nav {
   display: flex;
-  direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: none;
+  gap: 0px;
   color: #171717;
   padding: 1rem 8.3rem;
 }
@@ -172,15 +175,15 @@ html {
 }
 .nav-wrapper nav .nav_containerLeft {
   display: flex;
-  direction: none;
-  flex-wrap: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
   gap: 0rem;
 }
 .nav-wrapper nav .nav_containerLeft .navbar {
   display: flex;
-  direction: row;
+  flex-direction: row;
   flex-wrap: nowrap;
   justify-content: normal;
   align-items: normal;
@@ -197,7 +200,7 @@ html {
 }
 .nav-wrapper nav .nav_containerRight {
   display: flex;
-  direction: row;
+  flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
@@ -206,7 +209,7 @@ html {
 .nav-wrapper nav .nav_containerRight ul {
   list-style: none;
   display: flex;
-  direction: row;
+  flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
@@ -233,7 +236,7 @@ html {
 }
 .heroHome .containerLeft {
   display: flex;
-  direction: row;
+  flex-direction: row;
   flex-wrap: nowrap;
   justify-content: normal;
   align-items: center;
@@ -245,12 +248,64 @@ html {
 }
 .heroHome .containerRight {
   display: flex;
-  direction: row;
+  flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   gap: 0px;
   width: 60%;
+}
+
+.ourProducts {
+  background-color: #FFFAF3;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  width: 100%;
+  height: 43.9rem;
+}
+.ourProducts div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: center;
+  gap: 0rem;
+}
+.ourProducts div h2 {
+  text-align: center;
+  padding-bottom: 4.8rem;
+}
+.ourProducts div .container_ourProductsCard {
+  width: 61.41rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0px;
+}
+.ourProducts div .container_ourProductsCard .ourProductsCard {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: center;
+  gap: 0px;
+}
+.ourProducts div .container_ourProductsCard .ourProductsCard .container_img {
+  outline: none;
+  border: none;
+  width: 13.3rem;
+  padding: 0.5rem;
+}
+.ourProducts div .container_ourProductsCard .ourProductsCard .container_img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=styles.css.map */
