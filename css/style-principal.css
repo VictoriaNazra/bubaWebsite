@@ -226,6 +226,7 @@ nav .nav_containerLeft{
     display: flex;
     gap: 2.4rem;
     align-items: center;
+
 }
 .navbar_icons img{
     width: 2.31rem;

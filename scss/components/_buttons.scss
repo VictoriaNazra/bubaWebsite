@@ -1,0 +1,58 @@
+.btn-primary {
+    @include font-stack-body(bold, 1.6rem);
+    color: white;
+    background-color: $color-blackBuba;
+    border-radius: $btn-border-radius;
+    outline: none;
+    border: none;
+    padding: $btn-padding;
+    
+    &:hover {
+    background-color: lighten($color-blackBuba, 10%);
+    }
+    
+    &:active {
+    background-color: darken($color-blackBuba, 20%);
+    }
+}
+.btn-primaryIcon {
+    @extend .btn-primary;
+    @include flex(row,nowrap,center,center,1rem);
+}
+
+.btn-iconRight {
+    @extend .btn-primary;
+    @include flex(row,nowrap,row-reverse,center,1rem);
+}
+
+.btn-secondary {
+    @extend .btn-primary;
+    background-color: transparent;
+    color:$color-blackBuba;
+    outline: none;
+    border: 0.15rem solid $color-blackBuba;
+}
+
+.btnIcon{
+    width: 22px;
+    border: 0;
+    border-radius: 50%;
+    background-color: #B6C37F;
+    padding: 0.5rem;
+}
+
+.iconNoColor{
+    border-radius: 0%;
+    background-color: transparent;
+}
+
+.container_btn{
+    @include flex(row,nowrap,space-between,center,0px);
+    width: 36.6rem;
+}
+
+.green{
+    background-color: $color-green;
+    color: black;
+}
+
