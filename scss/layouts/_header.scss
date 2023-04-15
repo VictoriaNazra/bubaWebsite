@@ -14,7 +14,6 @@
         .container_logo{
             width: 7.7rem;
             height: 4.17rem;
-            
             a{
                 .logo{
                     width: 100%;
@@ -26,17 +25,15 @@
 
     // nav medio
     .nav_containerLeft{
-        @include flex(none,none,space-between,center,none)
-
+        @include flex(none,none,space-between,center,none);
+        
         .navbar{
-            @include flex(none,none,none,none,2.4rem)
+            @include flex(none,none,none,none,2.4rem);
             list-style: none;
-
             li{
                 a{
                     text-decoration: none;
                     color: $color-blackTitles;
-
                     .IconLocation{
                         padding-right: 0.7rem;
                     }
