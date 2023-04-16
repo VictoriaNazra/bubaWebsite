@@ -33,7 +33,13 @@
                     a{
                         text-decoration: none;
                         color: $color-blackTitles;
-                        font-size: 1.6rem;
+                        @include font-stack-body(400, 1.6rem);
+
+                        &:hover {
+                            font-weight: bold;
+                            border-bottom: 0.4rem solid #B16F2F;
+                        }                            }
+
                         .IconLocation{
                             padding-right: 0.7rem;
                         }
@@ -70,4 +76,3 @@
             }
         }
     }
-}
