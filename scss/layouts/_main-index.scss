@@ -149,7 +149,7 @@
     span{
         @include font-stack-body(400, 2rem);
     }
-    
+
     .minus, .plus{
         font-size: 3rem;
     }
@@ -164,3 +164,33 @@
     }
 }
 
+// Find your nearest Buba Store
+
+.findNearStore{
+    background-image: url(../assets/img/store1.png);
+    width: 100%;
+    height: 56.8rem;
+    background-position-y: 63%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include flex(row,nowrap,space-evenly,center,0rem);
+
+    .left{
+        width: 40.2rem;
+        height: 39rem;
+        border-radius: 10px;
+        background-color: white;
+        @include flex(column,nowrap,space-evenly,center,0px);
+        padding: 8.7rem 6.15rem;
+    }
+
+    .right{
+        width: 29.6rem;
+        height: 29.6rem;
+
+        img{
+            width: 100%;
+        }
+    }
+
+}
