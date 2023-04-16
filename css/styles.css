@@ -308,4 +308,143 @@ html {
   border-radius: 50%;
 }
 
+.nowTrending_wrapper {
+  background-color: beige;
+  width: 100%;
+  padding-top: 7.7rem;
+  padding-bottom: 8.4rem;
+  padding-left: 8.3rem;
+  padding-right: 8.3rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+}
+.nowTrending_wrapper .nowTrendingHeaders {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+}
+.nowTrending_wrapper .container_productsCard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+  width: auto;
+  padding-top: 4.8rem;
+  padding-bottom: 6.4rem;
+}
+
+.productsCard {
+  width: 28.2rem;
+  height: 47.5rem;
+  border-radius: 1rem;
+  background-color: white;
+  filter: drop-shadow(1.80966px 4.52416px 10.858px rgba(0, 0, 0, 0.15));
+}
+.productsCard .cardImg {
+  width: 28.2rem;
+  height: 27.3rem;
+  position: relative;
+  z-index: -1;
+}
+.productsCard .cardImg img {
+  width: 100%;
+}
+.productsCard .cardInfo {
+  height: 20.5rem;
+  padding-top: 2.2rem;
+  padding-bottom: 1.59rem;
+  padding-right: 2.164rem;
+  padding-left: 2.164rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0rem;
+}
+.productsCard .cardInfo .CardInfoElements {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: normal;
+  align-items: center;
+  gap: 1.4rem;
+}
+.productsCard .cardInfo .CardInfoElements .cardText {
+  height: 7rem;
+  gap: 12px;
+}
+.productsCard .cardInfo .CardInfoElements .cardText h4 {
+  font-family: "Open Sans", sans-serif;
+  line-height: 2.4rem;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #5B5A56;
+  text-align: center;
+  padding-bottom: 1.2rem;
+  color: #171717;
+}
+.productsCard .cardInfo .CardInfoElements .cardText .cardDescription {
+  font-family: "Open Sans", sans-serif;
+  line-height: 2.4rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #5B5A56;
+  width: 18.2rem;
+  padding-bottom: 1.59rem;
+  line-height: 160.18%;
+  text-align: center;
+  color: #5B5A56;
+}
+
+.wrapper {
+  border-radius: 34.82px;
+  background-color: #EFEFEF;
+  width: 12.9rem;
+  height: 4.41rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0rem;
+}
+.wrapper span {
+  font-family: "Open Sans", sans-serif;
+  line-height: 2.4rem;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #5B5A56;
+}
+.wrapper .minus, .wrapper .plus {
+  font-size: 3rem;
+}
+
+.cardFooter {
+  width: 23.8rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0rem;
+}
+.cardFooter .price {
+  font-family: "Open Sans", sans-serif;
+  line-height: 2.4rem;
+  font-weight: 600;
+  font-size: 2.2rem;
+  color: #5B5A56;
+}
+
 /*# sourceMappingURL=styles.css.map */

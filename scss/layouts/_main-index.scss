@@ -59,3 +59,108 @@
         }
     }
 }
+
+// now trending
+.nowTrending_wrapper {
+    background-color: $color-beige;
+    width: 100%;
+    padding-top: 7.7rem;
+    padding-bottom: 8.4rem;
+    padding-left: 8.3rem;
+    padding-right: 8.3rem;
+    @include flex(column,nowrap,center,center,0px);
+
+    .nowTrendingHeaders{
+        width: auto;
+        @include flex(column,nowrap,center,center,0px);
+    }
+    // cards
+    .container_productsCard {
+        @include flex(row,wrap,center,center,2.4rem);
+        width: auto;
+        padding-top: 4.8rem;
+        padding-bottom: 6.4rem;
+    }
+}
+
+.productsCard{
+    width: 28.2rem;
+    height: 47.5rem;
+    border-radius: 1rem;
+    background-color: white;
+    filter: drop-shadow(1.80966px 4.52416px 10.858px rgba(0, 0, 0, 0.15));
+
+    .cardImg{
+        width: 28.2rem;
+        height: 27.3rem;
+        position: relative;
+        z-index: -1;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .cardInfo{
+        height: 20.5rem;
+        padding-top: 2.2rem;
+        padding-bottom: 1.59rem;
+        padding-right: 2.164rem;
+        padding-left: 2.164rem;
+        @include flex(column,wrap,space-between,center,0rem);
+
+        .CardInfoElements{
+            // width: 28.2rem;
+            // height: 12.81rem;
+            @include flex(column,wrap,normal,center,1.4rem);
+            // padding: 0px;
+            
+            .cardText{
+                height: 7rem;
+                gap: 12px;
+
+                h4{
+                    @include font-stack-body(600, 2rem);
+                    text-align: center;
+                    padding-bottom: 1.2rem;
+                    color: $color-blackTitles;
+                }
+
+                .cardDescription{
+                    @include font-stack-body(400, 1.2rem);
+                    width: 18.2rem;
+                    padding-bottom: 1.59rem;
+                    line-height: 160.18%;
+                    text-align: center;
+                    color: $color-blackBody;
+                }
+            }
+        }
+    }
+}
+
+.wrapper{
+    border-radius: 34.82px;
+    background-color: #EFEFEF;
+    width: 12.9rem;
+    height: 4.41rem;
+    @include flex(row,wrap,space-evenly,center,0rem);
+
+    span{
+        @include font-stack-body(400, 2rem);
+    }
+    
+    .minus, .plus{
+        font-size: 3rem;
+    }
+}
+
+.cardFooter{
+    width: 23.8rem;
+    @include flex(row,wrap,space-between,center,0rem);
+
+    .price{
+        @include font-stack-body(600, 2.2rem);
+    }
+}
+
