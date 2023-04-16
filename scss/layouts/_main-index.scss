@@ -232,3 +232,21 @@
         }
     }
 }
+
+// Register now
+
+.registerNow {
+    width: 100%;
+    height: 36.6rem;
+    background-image: url(../assets/img/registerNow.png);
+    background-position-x: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include flex(row,nowrap,normal,center,0px);
+
+    div{
+        color: white;
+        @include flex(column,nowrap,space-evenly,center,2.4px);
+        padding-left: 22.2rem;
+    }
+}
