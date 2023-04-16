@@ -73,7 +73,7 @@ h5 {
   color: #5B5A56;
   color: white;
   background-color: #363030;
-  border-radius: 70px;
+  border-radius: 7rem;
   outline: none;
   border: none;
   padding: 1.2rem 3.2rem;
@@ -559,6 +559,128 @@ html {
   align-items: center;
   gap: 2.4px;
   padding-left: 22.2rem;
+}
+
+footer {
+  background-color: #323334;
+  height: auto;
+  color: white;
+}
+footer .container_footer {
+  padding: 4rem 8.3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0rem;
+}
+footer .container_footer .footerLeft {
+  width: 27.6rem;
+  height: 32.8rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0rem;
+}
+footer .container_footer .footerLeft .footerLeftText {
+  width: 27.6rem;
+  height: 23.94rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 0rem;
+}
+footer .container_footer .footerLeft .footerLeftText .container_logoFooter {
+  width: 11.18rem;
+  height: 6.32rem;
+}
+footer .container_footer .footerLeft .footerLeftText .container_logoFooter img {
+  width: 100%;
+}
+footer .container_footer .footerLeft .footerLeftText p {
+  color: white;
+}
+footer .container_footer .footerLeft .socialsUl {
+  list-style: none;
+  font-size: 1.4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: flex-start;
+  gap: 0rem;
+}
+footer .container_footer .footerLeft li {
+  padding-left: 4rem;
+}
+footer .container_footer .footerLeft li a {
+  color: white;
+  text-decoration: none;
+}
+footer .container_footer .footerRight {
+  width: 82.3rem;
+  max-width: 65rem;
+  height: 16.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .container_footer .footerRight div {
+  width: 12rem;
+  height: 16.1rem;
+}
+footer .container_footer .footerRight div h3 {
+  padding-bottom: 1.6rem;
+}
+footer .container_footer .footerRight div ul {
+  list-style: none;
+  font-size: 1.4rem;
+}
+footer .container_footer .footerRight div ul li {
+  padding-bottom: 1.6rem;
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+  line-height: 2.4rem;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #5B5A56;
+}
+footer .container_footer .footerRight div ul li a {
+  color: white;
+  text-decoration: none;
+}
+footer .container_footer .footerRight div ul li a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+footer .container_footer .footerRight .IconFinderFooter {
+  display: flex;
+  align-items: first baseline;
+}
+footer .container_footer .footerRight .IconFinderFooter li a img {
+  width: 1.9rem;
+}
+
+.webRights {
+  background-color: #222222;
+  width: 100%;
+  height: 4.4rem;
+  text-align: center;
+}
+.webRights p {
+  font-family: "Open Sans", sans-serif;
+  line-height: 2.4rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #5B5A56;
+  color: white;
+  padding: 1.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
