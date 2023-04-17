@@ -836,7 +836,7 @@ html {
 }
 .container_sF .map-responsive {
   overflow: hidden;
-  padding-bottom: 56.25%;
+  padding-bottom: 50.25%;
   position: relative;
   height: 0;
 }

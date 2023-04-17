@@ -61,28 +61,9 @@ $background-color_1: #323334;
             }
         }
     }
-    // .sFcontainerRight{
-    //     // width: 50vh;
-    //     // iframe{
-    //     //     width: 100%;
-    //     // }
-    //     .sFContainerRight {
-    //         position: relative;
-    //         width: 50vh;
-    //         padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    //     }
-    
-    //     .sFContainerRight iframe {
-    //         position: absolute;
-    //         top: 0;
-    //         left: 0;
-    //         width: 100%;
-    //         height: 100%;
-    //     }
-    // }
     .map-responsive{
         overflow:hidden;
-        padding-bottom:56.25%;
+        padding-bottom:50.25%;
         position:relative;
         height:0;
 
