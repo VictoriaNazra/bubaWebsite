@@ -1,0 +1,52 @@
+.container_loginForm{
+    .container_loginForm_data{
+        .container_casillerosParaInfo{
+            @include font-stack-body(400, 1.6rem);
+            .mb-5{
+                    margin-bottom: 3.4rem;
+                label{
+                    font-size: 1.6rem;
+                }
+                div{
+                    input{
+                    border-radius: 0;
+                    border-bottom: 1px solid #CDCDCD;
+                    font-size: 1.6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .container_checkbox{
+        .form-check{
+            @include flex(row,nowrap,flex-start,center,0px);
+            input{
+                height: 1.8rem;
+                width: 1.8rem;
+            }
+            label{
+                span{
+                    color: #DA7E1E;
+                    font-weight: bold;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+.container_signUpSocials {
+    @include flex(column,nowrap,normal,center,3.2px);
+        
+        p {
+            @include font-stack-body(400, 1.4rem);
+            color: #9C9C9C;
+        }
+
+        ul{
+            gap: 1.6rem;
+            li{
+                list-style: none;
+            }
+        }
+    }

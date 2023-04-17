@@ -138,6 +138,66 @@ h5 {
   color: black;
 }
 
+.container_loginForm .container_loginForm_data .container_casillerosParaInfo {
+  font-family: "Open Sans", sans-serif;
+  line-height: 2.4rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #363030;
+}
+.container_loginForm .container_loginForm_data .container_casillerosParaInfo .mb-5 {
+  margin-bottom: 3.4rem;
+}
+.container_loginForm .container_loginForm_data .container_casillerosParaInfo .mb-5 label {
+  font-size: 1.6rem;
+}
+.container_loginForm .container_loginForm_data .container_casillerosParaInfo .mb-5 div input {
+  border-radius: 0;
+  border-bottom: 1px solid #CDCDCD;
+  font-size: 1.6rem;
+}
+
+.container_checkbox .form-check {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0px;
+}
+.container_checkbox .form-check input {
+  height: 1.8rem;
+  width: 1.8rem;
+}
+.container_checkbox .form-check label span {
+  color: #DA7E1E;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.container_signUpSocials {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: center;
+  gap: 3.2px;
+}
+.container_signUpSocials p {
+  font-family: "Open Sans", sans-serif;
+  line-height: 2.4rem;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #363030;
+  color: #9C9C9C;
+}
+.container_signUpSocials ul {
+  gap: 1.6rem;
+}
+.container_signUpSocials ul li {
+  list-style: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -654,6 +714,14 @@ html {
 .flipped {
   flex-direction: row-reverse;
   background-color: white;
+}
+
+.container_loginLeft img {
+  width: 100%;
+}
+
+.container_loginForm {
+  width: 49.5rem;
 }
 
 .heroTitle {
