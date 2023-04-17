@@ -19,14 +19,9 @@ $background-color_1: #323334;
     }
 }
 .container_sF {
-	width: 136.3rem;
-	height: 72.8rem;
-	display: flex;
-	flex-direction: row;
+    @include flex(row,nowrap,space-between,center,0rem);
 
     .sFContainerLeft {
-        width: 100%;
-        height: 72.8rem;
         margin: 2rem 3.5rem 2.8rem 8.3rem;
 
         .container_storeFinderTop {
@@ -66,6 +61,43 @@ $background-color_1: #323334;
             }
         }
     }
+    // .sFcontainerRight{
+    //     // width: 50vh;
+    //     // iframe{
+    //     //     width: 100%;
+    //     // }
+    //     .sFContainerRight {
+    //         position: relative;
+    //         width: 50vh;
+    //         padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    //     }
+    
+    //     .sFContainerRight iframe {
+    //         position: absolute;
+    //         top: 0;
+    //         left: 0;
+    //         width: 100%;
+    //         height: 100%;
+    //     }
+    // }
+    .map-responsive{
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+
+        .map-responsive iframe{
+            left:0;
+            top:0;
+            height:100%;
+            width:100%;
+            position:absolute;
+        
+        }
+    
+    }
+    
+
 }
 
 .bottomContainer{
@@ -81,19 +113,19 @@ $background-color_1: #323334;
             list-style: none;
             display: flex;
             flex-direction: row;
+            justify-content: flex-start;
             gap: 2rem;
-            background-color: red;
-            
+
             li {
                 display: flex;
                 flex-direction: row;
-                color: red;
-                width: 1.8rem;
-                height: 1.8rem;
+                justify-content: center;
+                align-items: center;
+                gap: 0.4rem;
                 @include font-stack-body(400, 1.4rem);
                 img {
-                    width: 100%;
-                    padding-left: 0.4rem;
+                    width: 1.8rem;
+                    height: 1.8rem;
                 }
             }
         }
