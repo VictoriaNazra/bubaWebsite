@@ -1,3 +1,6 @@
+.heroTitle{
+    @include font-stack-titles(4.8rem)
+}
 .container_shop {
 	display: grid;
 	grid-template-columns: repeat(2,1fr)(10,1fr);

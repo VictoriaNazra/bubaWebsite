@@ -50,27 +50,28 @@
                 <div class="container_storeFinderTop">
                 <!-- search bar -->
                     <div class="container_searchBar">
-                        <div class="iconSearchBar">
-                            <a href="#"><img src="../assets/icons/IconSearch.svg"></a>
+                        <div class="container_searchBar_left">
+                            <div class="iconSearchBar">
+                                <a href="#"><img src="../assets/icons/IconSearch.svg"></a>
+                            </div>
+                            <form action="">
+                                <input type="text" placeholder="Find a store" name="storeFinder">
+                            </form>
                         </div>
-                        <form action="" class="searchBar">
-                            <input type="text" placeholder="Find a store" name="storeFinder">
-                        </form>
-                    </div>
-                    <div class="container_SBiconFilter">
-                        <a href="#"><img src="../assets/icons/iconFilter.png" alt="iconFilter"></a>
+                        <div class="container_SBiconFilter">
+                            <a href="#"><img src="../assets/icons/iconFilter.png" alt="iconFilter"></a>
+                        </div>
                     </div>
                 </div>
                 <div class="bottomContainer">
-                    <div class="containerLeft">
                         <!-- Buba Melbourne -->
                         <div class="locationCard">
                             <div class="container_locationCardTitles">
-                                <h1>Büba Melbourne</h1>
+                                <h2>Büba Melbourne</h2>
                                 <p class="body14Regular">107 Mount Pleasant Rd, Nunawading VIC 3131, Melbourne Australia</p>
                             </div>
                             <div>
-                                <p>Open Mon - Fri</p>
+                                <p class="body16Bold">Open Mon - Fri</p>
                                 <p class="body14Regular">6:30 am - 5:30 pm</p>
                             </div>
                             <div class="container_SFOptions">
@@ -87,7 +88,7 @@
                         <!-- Buba Sydney -->
                         <div class="locationCard">
                             <div class="container_locationCardTitles">
-                                <h1>Büba Sydney</h1>
+                                <h2>Büba Sydney</h2>
                                 <p class="body14Regular">H5 Strathfield, Nueva Gales del Sur, Sydney, Australia</p>
                             </div>
                             <div>
@@ -96,8 +97,9 @@
                             </div>
                             <div class="container_SFOptions">
                                 <ul>
-                                    <li><img src="../assets/icons/delivery.png" alt="Icon Delivery">Delivery</li>
-                                    <li><img src="../assets/icons/store.png">In-store Pickup</li>
+                                    <li class="body14Regular"><p><img src="../assets/icons/delivery.png" alt="Icon Delivery">Delivery
+                                    </p></li>
+                                    <li class="body14Regular"><img src="../assets/icons/store.png">In-store Pickup</li>
                                 </ul>
                             </div>
                             <div class="container_btn">
@@ -108,7 +110,6 @@
                     </div>
                     <!-- scroll bar -->
                     <div class="containerRight"></div>
-                </div>
             </div>
             <!-- Google maps, ojo que esta en PX, no va a ser responsive desp -->
             <div class="sFContainerRight">

@@ -3,9 +3,7 @@
 	height: 21.3rem;
 	color: white;
 	background-image: url(../assets/img/aboutUsBackround.png);
-	background-position-y: 0%;
-	background-repeat: no-repeat;
-	background-size: cover;
+    @include backound-img ($background-position-y: 0%, $background-repeat: no-repeat, $background-size: cover);
     @include flex(row,nowrap,center,center,0rem);
 	.container_hero {
 		width: auto;

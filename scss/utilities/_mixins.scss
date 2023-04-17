@@ -7,3 +7,10 @@
     align-items: $align;
     gap: $gap;
 }
+
+// Bacround img for hero
+@mixin backound-img ($background-position-y: 0%, $background-repeat: no-repeat, $background-size: cover){
+	background-position-y: $background-position-y;
+	background-repeat: $background-repeat;
+	background-size: $background-size;
+}
