@@ -1,4 +1,4 @@
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
 
 // nav
 
@@ -11,18 +11,28 @@
 // Home ................................................
 
 // Hero
-
 .containerLeft img {
-        width: 133%;
-    }
+  width: 133%;
+}
 
 // Now trending
 
-.container_productsCard {
-    @include flex(row,nowrap,flex-start,center,2.4rem);
-    .cardHidden {
-        display: none;
+.nowTrending_wrapper{
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+  .container_productsCard {
+    // @include flex(row,nowrap,flex-start,center,2.4rem);
+    // .cardHidden {
+    //     display: none;
+    //   }
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2.4rem;
+  }
+  
+.productsCard{
+  .cardImg{
       }
+    }
     }
   
     /***************   Register Now ***************/

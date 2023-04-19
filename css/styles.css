@@ -410,15 +410,14 @@ html {
   gap: 0px;
 }
 .nowTrending_wrapper .container_productsCard {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 2.4rem;
   width: auto;
   padding-top: 4.8rem;
   padding-bottom: 6.4rem;
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 3.2rem;
 }
 
 .productsCard {
@@ -428,22 +427,27 @@ html {
   justify-content: center;
   align-items: flex-start;
   gap: 0px;
-  width: 28.2rem;
-  height: 47.5rem;
+  width: auto;
   border-radius: 1rem;
   background-color: white;
   filter: drop-shadow(1.80966px 4.52416px 10.858px rgba(0, 0, 0, 0.15));
+  order: 3;
+  flex-grow: 1;
+  min-width: 155px;
+  max-width: 330px;
 }
 .productsCard .cardImg {
-  width: 28.2rem;
-  height: 27.3rem;
+  width: auto;
+  height: auto;
   position: relative;
   z-index: -1;
+  flex-grow: 1;
 }
 .productsCard .cardImg img {
   width: 100%;
 }
 .productsCard .cardInfo {
+  width: 100%;
   height: auto;
   padding: 24px 16px;
   display: flex;
@@ -452,7 +456,7 @@ html {
   justify-content: normal;
   align-items: center;
   gap: 2.4rem;
-  height: auto;
+  flex-grow: 1;
 }
 .productsCard .cardInfo .CardInfoElements {
   display: flex;
@@ -513,7 +517,7 @@ html {
 }
 
 .cardFooter {
-  width: 23.8rem;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1098,23 +1102,20 @@ footer .container_footer .footerRight .IconFinderFooter li a img {
   padding: 1.5rem;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .nav-wrapper nav {
     padding: 1rem 3.2rem;
   }
   .containerLeft img {
     width: 133%;
   }
-  .container_productsCard {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 2.4rem;
+  .nowTrending_wrapper {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
   }
-  .container_productsCard .cardHidden {
-    display: none;
+  .nowTrending_wrapper .container_productsCard {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2.4rem;
   }
   /***************   Register Now ***************/
   .registerNow {
@@ -1128,7 +1129,7 @@ footer .container_footer .footerRight .IconFinderFooter li a img {
     height: 19.3rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .nav-wrapper nav {
     padding: 1rem 2.4rem;
   }
@@ -1172,92 +1173,34 @@ footer .container_footer .footerRight .IconFinderFooter li a img {
   .nav-wrapper nav .nav_containerRight li a button {
     width: 100%;
   }
+  .nowTrending_wrapper {
+    padding-left: 2.4rem;
+    adding-right: 2.4rem;
+  }
+  .nowTrending_wrapper .container_productsCard {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /***************   Register Now ***************/
+  .registerNow {
+    background-position-x: -156px;
+  }
+  .registerNow div {
+    padding-left: 11.2rem;
+  }
+  /****************   About Us Page   ****************/
+  .container_aboutUsImg img {
+    height: 19.3rem;
+  }
 }
-/********************   HERO *********************/
-.heroHome .containerLeft img {
-  width: 133%;
-  transform: translateX(-50px);
-}
-
-/******************* footer *****************/
-footer .container_footer {
-  flex-wrap: wrap;
-  gap: 4rem;
-}
-
-.footerLeft .footerLeftText {
-  align-items: center;
-}
-
-.footerLeft {
-  align-items: center;
-}
-
-/****************** Home *****************/
-/* Our products ******************/
-.ourProducts .element {
-  display: block;
-  padding: 7.7rem 0rem 7.7rem 0rem;
-}
-
-.ourProducts ::-webkit-scrollbar {
-  width: 0;
-}
-
-.container_ourProductsCard {
-  display: flex;
-  align-items: center;
-  justify-content: flex-center;
-  width: auto;
-  overflow-x: auto;
-  margin-left: 0rem;
-  gap: 0px;
-  padding: 0px;
-}
-
-.ourProductsCard {
-  padding-left: 1.6rem;
-  padding-right: 1.6rem;
-}
-
-/* Now trending *****************/
-.nowTrending_wrapper {
-  display: block;
-  padding: 7.7rem 0rem 7.7rem 0rem;
-}
-
-.nowTrending_wrapper ::-webkit-scrollbar {
-  width: 0;
-}
-
-.cardHidden {
-  display: block;
-}
-
-.nowTrending_wrapper button {
-  display: none;
-}
-
-.container_productsCard {
-  overflow-x: auto;
-  margin-left: 0rem;
-  gap: 0px;
-}
-
-.productsCard {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
-
-/* find Near Store *****************/
-.findNearStore .right {
-  width: 0rem;
-  height: 0rem;
-  display: none;
-}
-
-.findNearStore .right img {
-  display: none;
+@media (max-width: 375px) {
+  .nowTrending_wrapper {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
+  .nowTrending_wrapper .container_productsCard {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

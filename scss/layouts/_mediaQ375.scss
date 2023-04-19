@@ -1,0 +1,24 @@
+@media(max-width:375px){
+
+    // Now trending
+
+.nowTrending_wrapper{
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    .container_productsCard {
+      // @include flex(row,nowrap,flex-start,center,2.4rem);
+      // .cardHidden {
+      //     display: none;
+      //   }
+    display: flex;
+    flex-wrap: wrap;
+    }
+    
+
+.productsCard{
+    .cardImg{
+        }
+    }
+    }
+    
+}

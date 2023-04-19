@@ -1,4 +1,4 @@
-@media(max-width:768px){
+@media(max-width:767px){
 
 // Nav
 .nav-wrapper{
@@ -46,94 +46,48 @@
             }
         }
     
-    }
-    
-    
-    
-    
-    
+// Now trending
 
-
-
-
-    
-    /********************   HERO *********************/
-    .heroHome .containerLeft img {
-        width: 133%;
-        transform: translateX(-50px);
-    }
-    
-    /******************* footer *****************/
-    
-    footer .container_footer {
-        flex-wrap: wrap;
-        gap: 4rem;
-    }
-    .footerLeft .footerLeftText {
-        align-items: center;
-    }
-    
-    .footerLeft {
-        align-items: center;
-    }
-    
-    /****************** Home *****************/
-    /* Our products ******************/
-    .ourProducts .element {
-        display: block;
-        padding: 7.7rem 0rem 7.7rem 0rem;
-    }
-    .ourProducts ::-webkit-scrollbar{
-        width: 0;
-    }
-    .container_ourProductsCard {
-        display: flex;
-        align-items: center;
-        justify-content: flex-center;
-        width: auto;
-        overflow-x: auto;
-        margin-left: 0rem;
-        gap: 0px;
-        padding: 0px;
-    }
-    .ourProductsCard {
-        padding-left: 1.6rem;
-        padding-right: 1.6rem;
-    }
-    /* Now trending *****************/
-    .nowTrending_wrapper {
-        display: block;
-        padding: 7.7rem 0rem 7.7rem 0rem;
-    }
-    .nowTrending_wrapper ::-webkit-scrollbar{
-        width: 0;
-    }
-    .cardHidden{
-        display:block
-    }
-    
-    .nowTrending_wrapper button{
-        display: none;
-    }
-    
+.nowTrending_wrapper{
+    padding-left: 2.4rem;
+    adding-right: 2.4rem;
     .container_productsCard {
-        overflow-x: auto;
-        margin-left: 0rem;
-        gap: 0px;
+      // @include flex(row,nowrap,flex-start,center,2.4rem);
+      // .cardHidden {
+      //     display: none;
+      //   }
+    //   display: flex;
+    //   flex-wrap: wrap;
+    //   align-items: center;
+    //   justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
     }
     
-    .productsCard {
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
-    }
+  .productsCard{
+    .cardImg{
+        }
+      }
+      }
     
-    /* find Near Store *****************/
+      /***************   Register Now ***************/
+      .registerNow {
+        background-position-x: -156px;
     
-    .findNearStore .right {
-        width: 0rem;
-        height: 0rem;
-        display: none;
+        div {
+          padding-left: 11.2rem;
+        }
+      }
+    
+      /****************   About Us Page   ****************/
+      .container_aboutUsImg img {
+        height: 19.3rem;
+      }
+
+
+
     }
-    .findNearStore .right img {
-        display: none;
-    }
+
+    
+    
+    
+    
