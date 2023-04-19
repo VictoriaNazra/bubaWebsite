@@ -2,24 +2,39 @@
 
 .heroHome{
     width: 100%;
-    height: 63.4rem;
     background-color: #F3F5F2;
-    display: flex;
+    @include flex(row,nowrap,center,center,0px);
 
     .containerLeft{
-        @include flex(row,nowrap,normal,center,0px);
-        width: 40%;
 
         img{
             width: 100%;
+            max-width: 516px;
         }
     }
     .containerRight {
-        @include flex(row,nowrap,center,center,0px);
-        width: 60%;
+        
+        .wrapper_heroText{
+            @include flex(column,nowrap,space-between,center,3.2rem);
+            padding: 8.3rem;
+            
+            .conteiner_heroText{
+                @include flex(column,nowrap,space-between,center,3.2rem);
+
+                h1{
+                    text-align: center;
+                    max-width: 46rem;
+                }
+                p{
+                    text-align: center;
+                }
+
+            }
+        }
+
+
     }
 }
-// FALTA TERMINAR HERO
 
 // Our products (circulos)
 .ourProducts {
@@ -76,7 +91,7 @@
     }
     // cards
     .container_productsCard {
-        @include flex(row,wrap,center,center,2.4rem);
+        @include flex(row,wrap,flex-start,center,2.4rem);
         width: auto;
         padding-top: 4.8rem;
         padding-bottom: 6.4rem;
@@ -84,6 +99,7 @@
 }
 
 .productsCard{
+    @include flex(column,nowrap,center,flex-start,0px);
     width: 28.2rem;
     height: 47.5rem;
     border-radius: 1rem;
@@ -102,12 +118,10 @@
     }
 
     .cardInfo{
-        height: 20.5rem;
-        padding-top: 2.2rem;
-        padding-bottom: 1.59rem;
-        padding-right: 2.164rem;
-        padding-left: 2.164rem;
-        @include flex(column,wrap,space-between,center,0rem);
+        height: auto;
+        padding: 24px 16px;
+        @include flex(column,nowrap,normal,center,2.4rem);
+        height: auto;
 
         .CardInfoElements{
             // width: 28.2rem;

@@ -1,0 +1,33 @@
+@media (max-width: 1024px) {
+
+// Home ................................................
+
+// Hero
+
+.containerLeft img {
+        width: 133%;
+    }
+
+// Now trending
+
+.container_productsCard {
+    @include flex(row,nowrap,flex-start,center,2.4rem);
+    .cardHidden {
+        display: none;
+      }
+    }
+  
+    /***************   Register Now ***************/
+    .registerNow {
+      background-position-x: -156px;
+  
+      div {
+        padding-left: 11.2rem;
+      }
+    }
+  
+    /****************   About Us Page   ****************/
+    .container_aboutUsImg img {
+      height: 19.3rem;
+    }
+  }

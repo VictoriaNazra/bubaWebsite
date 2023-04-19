@@ -297,30 +297,41 @@ html {
 
 .heroHome {
   width: 100%;
-  height: 63.4rem;
   background-color: #F3F5F2;
-  display: flex;
-}
-.heroHome .containerLeft {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: normal;
-  align-items: center;
-  gap: 0px;
-  width: 40%;
-}
-.heroHome .containerLeft img {
-  width: 100%;
-}
-.heroHome .containerRight {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   gap: 0px;
-  width: 60%;
+}
+.heroHome .containerLeft img {
+  width: 100%;
+  max-width: 516px;
+}
+.heroHome .containerRight .wrapper_heroText {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.2rem;
+  padding: 8.3rem;
+}
+.heroHome .containerRight .wrapper_heroText .conteiner_heroText {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.2rem;
+}
+.heroHome .containerRight .wrapper_heroText .conteiner_heroText h1 {
+  text-align: center;
+  max-width: 46rem;
+}
+.heroHome .containerRight .wrapper_heroText .conteiner_heroText p {
+  text-align: center;
 }
 
 .ourProducts {
@@ -402,7 +413,7 @@ html {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 2.4rem;
   width: auto;
@@ -411,6 +422,12 @@ html {
 }
 
 .productsCard {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0px;
   width: 28.2rem;
   height: 47.5rem;
   border-radius: 1rem;
@@ -427,17 +444,15 @@ html {
   width: 100%;
 }
 .productsCard .cardInfo {
-  height: 20.5rem;
-  padding-top: 2.2rem;
-  padding-bottom: 1.59rem;
-  padding-right: 2.164rem;
-  padding-left: 2.164rem;
+  height: auto;
+  padding: 24px 16px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-wrap: nowrap;
+  justify-content: normal;
   align-items: center;
-  gap: 0rem;
+  gap: 2.4rem;
+  height: auto;
 }
 .productsCard .cardInfo .CardInfoElements {
   display: flex;
@@ -1081,6 +1096,34 @@ footer .container_footer .footerRight .IconFinderFooter li a img {
   color: #363030;
   color: white;
   padding: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .containerLeft img {
+    width: 133%;
+  }
+  .container_productsCard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2.4rem;
+  }
+  .container_productsCard .cardHidden {
+    display: none;
+  }
+  /***************   Register Now ***************/
+  .registerNow {
+    background-position-x: -156px;
+  }
+  .registerNow div {
+    padding-left: 11.2rem;
+  }
+  /****************   About Us Page   ****************/
+  .container_aboutUsImg img {
+    height: 19.3rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
