@@ -12,6 +12,9 @@
             max-width: 516px;
         }
     }
+    .smallBubaCup{
+        display: none
+    }
     .containerRight {
         
         .wrapper_heroText{
@@ -114,7 +117,7 @@
     // flex: none;
     order: 3;
     flex-grow: 1;
-    min-width: 155px;
+    // min-width: 155px;
     max-width: 330px;
 
     .cardImg{

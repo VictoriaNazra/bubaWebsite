@@ -309,6 +309,9 @@ html {
   width: 100%;
   max-width: 516px;
 }
+.heroHome .smallBubaCup {
+  display: none;
+}
 .heroHome .containerRight .wrapper_heroText {
   display: flex;
   flex-direction: column;
@@ -433,7 +436,6 @@ html {
   filter: drop-shadow(1.80966px 4.52416px 10.858px rgba(0, 0, 0, 0.15));
   order: 3;
   flex-grow: 1;
-  min-width: 155px;
   max-width: 330px;
 }
 .productsCard .cardImg {
@@ -1102,12 +1104,19 @@ footer .container_footer .footerRight .IconFinderFooter li a img {
   padding: 1.5rem;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   .nav-wrapper nav {
     padding: 1rem 3.2rem;
   }
-  .containerLeft img {
-    width: 133%;
+  footer .container_footer {
+    padding: 4rem 3.2rem;
+  }
+  footer .container_footer .footerRight {
+    width: auto;
+    flex-wrap: wrap;
+  }
+  .heroHome .containerRight .wrapper_heroText {
+    padding: 3.2rem;
   }
   .nowTrending_wrapper {
     padding-left: 3.2rem;
@@ -1129,7 +1138,12 @@ footer .container_footer .footerRight .IconFinderFooter li a img {
     height: 19.3rem;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+  h1 {
+    font-family: "Abhaya Libre", serif;
+    font-weight: bold;
+    font-size: 3.2rem;
+  }
   .nav-wrapper nav {
     padding: 1rem 2.4rem;
   }
@@ -1173,12 +1187,77 @@ footer .container_footer .footerRight .IconFinderFooter li a img {
   .nav-wrapper nav .nav_containerRight li a button {
     width: 100%;
   }
+  footer .container_footer {
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: center;
+    padding: 4rem 2.4rem;
+  }
+  footer .container_footer .footerLeft {
+    align-items: center;
+  }
+  footer .container_footer .footerLeft .footerLeftText {
+    align-items: center;
+  }
+  .heroHome .containerRight .wrapper_heroText {
+    padding: 2.4rem;
+  }
+  .ourProducts {
+    overflow: hidden;
+    justify-content: flex-start;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+  .ourProducts div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: center;
+    gap: 0rem;
+  }
+  .ourProducts div h2 {
+    text-align: center;
+    padding-bottom: 4.8rem;
+  }
+  .ourProducts div .container_ourProductsCard {
+    width: 61.41rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0px;
+  }
+  .ourProducts div .container_ourProductsCard .ourProductsCard {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: center;
+    gap: 0px;
+  }
+  .ourProducts div .container_ourProductsCard .ourProductsCard .container_img {
+    outline: none;
+    border: none;
+    width: 13.3rem;
+    padding: 0.5rem;
+  }
+  .ourProducts div .container_ourProductsCard .ourProductsCard .container_img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
   .nowTrending_wrapper {
     padding-left: 2.4rem;
-    adding-right: 2.4rem;
+    padding-right: 2.4rem;
   }
   .nowTrending_wrapper .container_productsCard {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .bookTable {
+    padding: 2.4rem;
+    gap: 2.4rem;
   }
   /***************   Register Now ***************/
   .registerNow {
@@ -1193,6 +1272,61 @@ footer .container_footer .footerRight .IconFinderFooter li a img {
   }
 }
 @media (max-width: 375px) {
+  .nav-wrapper nav {
+    padding: 1rem 1.6rem;
+  }
+  .heroHome {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6px;
+  }
+  .heroHome .containerLeft {
+    display: none;
+  }
+  .heroHome .smallBubaCup {
+    display: inline;
+    padding: 0px 13.1rem;
+  }
+  .heroHome .smallBubaCup img {
+    width: 100%;
+  }
+  .heroHome .containerRight .wrapper_heroText {
+    padding: 0px 1.6rem 1.6rem 1.6rem;
+    gap: 0rem;
+  }
+  .heroHome .containerRight .wrapper_heroText .conteiner_heroText {
+    padding: 1.6rem;
+  }
+  .heroHome .containerRight .wrapper_heroText .container_btn {
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    padding: 1.6rem;
+  }
+  .heroHome .containerRight .wrapper_heroText .container_btn button {
+    width: 100%;
+  }
+  .ourProducts {
+    padding-left: 1.6rem;
+    padding-right: 0px;
+  }
+  .ourProducts div h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .ourProducts div .container_ourProductsCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 375px;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  .container_ourProductsCard::-webkit-scrollbar {
+    display: none;
+  }
   .nowTrending_wrapper {
     padding-left: 1.6rem;
     padding-right: 1.6rem;
@@ -1200,6 +1334,10 @@ footer .container_footer .footerRight .IconFinderFooter li a img {
   .nowTrending_wrapper .container_productsCard {
     display: flex;
     flex-wrap: wrap;
+  }
+  .bookTable {
+    padding: 1.6rem;
+    gap: 1.6rem;
   }
 }
 

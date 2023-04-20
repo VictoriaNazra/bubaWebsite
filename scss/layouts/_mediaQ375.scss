@@ -1,5 +1,92 @@
 @media(max-width:375px){
 
+// nav
+.nav-wrapper{
+    nav{
+    padding: 1rem 1.6rem;
+    }
+}
+// INDEX
+
+// Hero
+.heroHome{
+    @include flex(column,nowrap,center,center,1.6px);
+    
+    .containerLeft{
+        display: none;
+    }
+    .smallBubaCup{
+        display: inline;
+        padding: 0px 13.1rem;
+
+        img{
+            width: 100%;
+        }
+    }
+    .containerRight {
+        .wrapper_heroText{
+            padding: 0px 1.6rem 1.6rem 1.6rem;
+            gap: 0rem;
+
+
+            .conteiner_heroText{
+                padding: 1.6rem;
+            }
+
+            .container_btn{
+                flex-wrap: wrap;
+                gap: 1.6rem;
+                padding: 1.6rem;
+
+                button{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+// Our products (circulos)
+.ourProducts {
+    // display: block;
+    padding-left: 1.6rem;
+    padding-right: 0px;
+    // overflow: hiddenau;
+    // overflow-x: auto;
+    // justify-content: center;
+
+    div{
+        // overflow: hidden;
+
+        h2{
+            width: 100%;
+            text-align: center;
+        }
+
+        .container_ourProductsCard{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 375px;
+            overflow-x: scroll;
+            -webkit-overflow-scrolling: touch;
+
+            .ourProductsCard{
+                
+                .container_img{
+
+                    img{
+
+                    }
+                }
+            }
+        }
+    }
+}
+.container_ourProductsCard::-webkit-scrollbar {
+    display: none;
+}
+
     // Now trending
 
 .nowTrending_wrapper{
@@ -20,5 +107,15 @@
         }
     }
     }
-    
+
+// Book a table
+
+.bookTable {
+    padding: 1.6rem;
+    gap:1.6rem
+}
+
+
+
+
 }

@@ -1,4 +1,4 @@
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
 
 // nav
 
@@ -8,12 +8,39 @@
   }
 }
 
+// footer
+footer{
+  .container_footer{
+      padding: 4rem 3.2rem;
+
+      .footerLeft{
+          // align-items: center;
+          .footerLeftText {
+              // align-items: center;
+          }
+      }
+
+      .footerRight{
+        width: auto;
+        flex-wrap: wrap;
+      }
+  }
+}
+
 // Home ................................................
 
 // Hero
-.containerLeft img {
-  width: 133%;
+.heroHome{
+  .containerRight {
+    .wrapper_heroText{
+      padding: 3.2rem;
+    
+      }
+  }
 }
+
+
+
 
 // Now trending
 
@@ -34,7 +61,7 @@
       }
     }
     }
-  
+
     /***************   Register Now ***************/
     .registerNow {
       background-position-x: -156px;
@@ -48,4 +75,5 @@
     .container_aboutUsImg img {
       height: 19.3rem;
     }
-  }
+
+}
