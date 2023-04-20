@@ -128,23 +128,13 @@ footer{
 .nowTrending_wrapper{
     padding-left: 2.4rem;
     padding-right: 2.4rem;
+    overflow: hidden;
+
     .container_productsCard {
-      // @include flex(row,nowrap,flex-start,center,2.4rem);
-      // .cardHidden {
-      //     display: none;
-      //   }
-    //   display: flex;
-    //   flex-wrap: wrap;
-    //   align-items: center;
-    //   justify-content: center;
     grid-template-columns: repeat(2, 1fr);
     }
-    
-  .productsCard{
-    .cardImg{
-        }
-      }
-      }
+
+    }
 
 // Book a table
 
@@ -156,18 +146,18 @@ footer{
 
     
       /***************   Register Now ***************/
-      .registerNow {
+    .registerNow {
         background-position-x: -156px;
     
         div {
-          padding-left: 11.2rem;
+        padding-left: 11.2rem;
         }
-      }
+    }
     
       /****************   About Us Page   ****************/
-      .container_aboutUsImg img {
+    .container_aboutUsImg img {
         height: 19.3rem;
-      }
+    }
 
 
 

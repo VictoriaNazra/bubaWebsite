@@ -1251,6 +1251,7 @@ footer .container_footer .footerRight .IconFinderFooter li a img {
   .nowTrending_wrapper {
     padding-left: 2.4rem;
     padding-right: 2.4rem;
+    overflow: hidden;
   }
   .nowTrending_wrapper .container_productsCard {
     grid-template-columns: repeat(2, 1fr);
@@ -1275,6 +1276,16 @@ footer .container_footer .footerRight .IconFinderFooter li a img {
   .nav-wrapper nav {
     padding: 1rem 1.6rem;
   }
+  footer .container_footer .footerRight {
+    height: auto;
+    flex-direction: column;
+    gap: 2.6rem;
+    text-align: center;
+  }
+  footer .container_footer .footerRight div {
+    width: 12rem;
+    height: auto;
+  }
   .heroHome {
     display: flex;
     flex-direction: column;
@@ -1282,6 +1293,7 @@ footer .container_footer .footerRight .IconFinderFooter li a img {
     justify-content: center;
     align-items: center;
     gap: 1.6px;
+    overflow: hidden;
   }
   .heroHome .containerLeft {
     display: none;
@@ -1335,9 +1347,56 @@ footer .container_footer .footerRight .IconFinderFooter li a img {
     display: flex;
     flex-wrap: wrap;
   }
+  .findNearStore {
+    padding: 1.6rem;
+  }
+  .findNearStore .right {
+    display: none;
+  }
+  .findNearStore .right img {
+    width: 100%;
+  }
   .bookTable {
     padding: 1.6rem;
     gap: 1.6rem;
+    flex-direction: column;
+  }
+  .bookTable .left {
+    width: 100%;
+  }
+  .bookTable .left div {
+    justify-content: center;
+    gap: 1.6rem;
+  }
+  .bookTable .left div img {
+    width: 80%;
+  }
+  .bookTable .left div button {
+    width: 100%;
+  }
+  .bookTable .right {
+    width: 100%;
+    padding: 4rem 5rem;
+  }
+  .bookTable .right button {
+    width: 100%;
+  }
+  .registerNow {
+    justify-content: center;
+    padding: 1.6rem;
+  }
+  .registerNow div {
+    padding-left: 0px;
+    gap: 2.6rem;
+    width: 100%;
+  }
+  .registerNow div h2 {
+    font-family: "Abhaya Libre", serif;
+    font-weight: bold;
+    font-size: 2.4rem;
+  }
+  .registerNow div button {
+    width: 100%;
   }
 }
 
