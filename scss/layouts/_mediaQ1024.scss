@@ -13,13 +13,6 @@ footer{
   .container_footer{
       padding: 4rem 3.2rem;
 
-      .footerLeft{
-          // align-items: center;
-          .footerLeftText {
-              // align-items: center;
-          }
-      }
-
       .footerRight{
         width: auto;
         flex-wrap: wrap;
@@ -60,29 +53,7 @@ footer{
 
     .sFContainerLeft {
       margin: 2rem 3.2rem 2.8rem 3.2rem;
-
-    
-
-}
-
-.bottomContainer{
-
-    .locationCard{
-            
-        ul {
-
-            li {
-                img {
-
-                }
-            }
-        }
     }
-
-        .container_btn{
-        }
-        
-}
 }
 
 // About us 
@@ -91,16 +62,11 @@ footer{
 	
   .container{
     padding: 8rem 3.2rem 8rem 3.2rem;
-        .container_aboutUsImg {
-        }
-        .aboutUsInfo {
-          // padding-inline: 3.6rem;
 
-            .container_aboutUsInfo {
-              
-            }
-        }
-	}
+    .aboutUsInfo{
+      padding-inline: 5rem;
+    }
+  }
 }
 
 }

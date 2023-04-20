@@ -132,7 +132,7 @@ footer{
 
     .container_productsCard {
     grid-template-columns: repeat(2, 1fr);
-    }
+        }
 
     }
 
@@ -146,10 +146,6 @@ footer{
 
 // Store Finder
 
-.heroStoreFinder {
-    p{
-    }
-}
 .container_sF {
     flex-wrap: wrap;
     justify-content: center;
@@ -158,58 +154,17 @@ footer{
 
         .container_storeFinderTop {
             padding: 1px 1.6rem;
-
-            .container_searchBar {
-                
-
-                .container_searchBar_left{
-                    .iconSearchBar{
-                        img {
-                        }
-                    }
-                    form{
-                        input{
-                    }
-                }
-            .container_SBiconFilter {
-                img {
-                    }
-                }
-            }
-        }
     }
-    .map-responsive{
-
-        .map-responsive iframe{
-        
-        }
-    
-    }
-    
-
 }
 
 .bottomContainer{
-
-    .locationCard{
-            
-        ul {
-
-            li {
-                img {
-
-                }
-            }
-        }
-    }
-
         .container_btn{
             button{
                 width: 100%;
             }
         }
         
-}
+    }
 }
 
 
@@ -229,25 +184,11 @@ footer{
 
 .aboutUs {
 	.container{
-        .container_aboutUsImg {
-            img {
-            }
-        }
         .aboutUsInfo {
         padding-inline: 3.6rem;
-
-            .container_aboutUsInfo {
-            
-            }
         }
 	}
 }
-
-// Login
-.container_loginRight{
-
-}
-
 
 
 

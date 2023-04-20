@@ -1143,6 +1143,9 @@ footer .container_footer .footerRight .IconFinderFooter li a img {
   .aboutUs .container {
     padding: 8rem 3.2rem 8rem 3.2rem;
   }
+  .aboutUs .container .aboutUsInfo {
+    padding-inline: 5rem;
+  }
 }
 @media (max-width: 768px) {
   h1 {

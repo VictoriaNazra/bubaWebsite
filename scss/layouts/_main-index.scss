@@ -117,14 +117,11 @@
 .productsCard{
     @include flex(column,nowrap,center,flex-start,0px);
     width: auto;
-    // height: 47.5rem;
     border-radius: 1rem;
     background-color: white;
     filter: drop-shadow(1.80966px 4.52416px 10.858px rgba(0, 0, 0, 0.15));
-    // flex: none;
     order: 3;
     flex-grow: 1;
-    // min-width: 155px;
     max-width: 330px;
 
     .cardImg{
