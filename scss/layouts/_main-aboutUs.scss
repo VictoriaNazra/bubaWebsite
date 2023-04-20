@@ -31,12 +31,15 @@
 		height: 100%;
         @include flex(row,nowrap,center,center,0rem);
         padding: 8rem 15rem 8rem 15rem;
-        max-width: 1140px;
+        max-width: 1440px;
 
         .container_aboutUsImg {
+            filter: drop-shadow(0px 6px 16px rgba(0, 0, 0, 0.16));
+            border-radius: 13.3631px;
+            overflow: hidden;
             img {
                 width: 100%;
-                border-radius: 13.5px;
+                // border-radius: 13.5px;
                 max-width: 549px;
             }
         }

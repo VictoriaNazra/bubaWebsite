@@ -56,42 +56,11 @@ footer{
 
 // Store Finder
 
-.heroStoreFinder {
-    p{
-    }
-}
 .container_sF {
 
     .sFContainerLeft {
       margin: 2rem 3.2rem 2.8rem 3.2rem;
 
-        .container_storeFinderTop {
-
-            .container_searchBar {
-
-                .container_searchBar_left{
-                    .iconSearchBar{
-                        img {
-                        }
-                    }
-                    form{
-                        input{
-                    }
-                }
-            .container_SBiconFilter {
-                img {
-                    }
-                }
-            }
-        }
-    }
-    .map-responsive{
-
-        .map-responsive iframe{
-        
-        }
-    
-    }
     
 
 }
@@ -114,16 +83,15 @@ footer{
         }
         
 }
-
+}
 
 // About us 
+
 .aboutUs {
 	
   .container{
-    padding: 8rem 3.2rem 6.4rem 3.2rem;
+    padding: 8rem 3.2rem 8rem 3.2rem;
         .container_aboutUsImg {
-            img {
-            }
         }
         .aboutUsInfo {
           // padding-inline: 3.6rem;
@@ -135,9 +103,4 @@ footer{
 	}
 }
 
-// Login
-
-
-
-}
 }

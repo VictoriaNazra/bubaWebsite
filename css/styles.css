@@ -713,11 +713,15 @@ html {
   align-items: center;
   gap: 0rem;
   padding: 8rem 15rem 8rem 15rem;
-  max-width: 1140px;
+  max-width: 1440px;
+}
+.aboutUs .container .container_aboutUsImg {
+  filter: drop-shadow(0px 6px 16px rgba(0, 0, 0, 0.16));
+  border-radius: 13.3631px;
+  overflow: hidden;
 }
 .aboutUs .container .container_aboutUsImg img {
   width: 100%;
-  border-radius: 13.5px;
   max-width: 549px;
 }
 .aboutUs .container .aboutUsInfo {
@@ -1136,8 +1140,8 @@ footer .container_footer .footerRight .IconFinderFooter li a img {
   .container_sF .sFContainerLeft {
     margin: 2rem 3.2rem 2.8rem 3.2rem;
   }
-  .container_sF .aboutUs .container {
-    padding: 8rem 3.2rem 6.4rem 3.2rem;
+  .aboutUs .container {
+    padding: 8rem 3.2rem 8rem 3.2rem;
   }
 }
 @media (max-width: 768px) {
@@ -1275,13 +1279,13 @@ footer .container_footer .footerRight .IconFinderFooter li a img {
   .container_sF .bottomContainer .container_btn button {
     width: 100%;
   }
-  .container_sF .heroAboutUs .container_hero div {
+  .heroAboutUs .container_hero div {
     width: 10.5rem;
   }
-  .container_sF .heroAboutUs .container_hero p {
+  .heroAboutUs .container_hero p {
     font-size: 5rem;
   }
-  .container_sF .aboutUs .container .aboutUsInfo {
+  .aboutUs .container .aboutUsInfo {
     padding-inline: 3.6rem;
   }
 }
@@ -1414,23 +1418,21 @@ footer .container_footer .footerRight .IconFinderFooter li a img {
   .container_sF .sFContainerLeft {
     margin: 2rem 3.2rem 2.8rem 3.2rem;
   }
-  .container_sF .heroAboutUs {
+  .heroAboutUs {
     display: none;
   }
-  .container_sF .aboutUs .container {
+  .aboutUs .container {
     flex-wrap: wrap;
     padding: 0px;
   }
-  .container_sF .aboutUs .container.flipped {
+  .aboutUs .container.flipped {
     flex-direction: column-reverse;
   }
-  .container_sF .aboutUs .container .container_aboutUsImg {
+  .aboutUs .container .container_aboutUsImg {
     width: 100%;
-  }
-  .container_sF .aboutUs .container .container_aboutUsImg img {
     border-radius: 0px;
   }
-  .container_sF .aboutUs .container .aboutUsInfo .container_aboutUsInfo {
+  .aboutUs .container .aboutUsInfo .container_aboutUsInfo {
     padding: 4.6rem 1.6rem;
   }
 }
