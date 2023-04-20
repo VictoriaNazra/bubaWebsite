@@ -1,11 +1,3 @@
-$color_1: white;
-$background-color_1: #323334;
-
-/* Search Bar   ***************/
-/* Location cards   ***************/
-/* .container_SFOptions ul li{
-    list-style: none;
-} */
 .heroStoreFinder {
 	width: 100%;
 	height: 21.3rem;
@@ -19,10 +11,12 @@ $background-color_1: #323334;
     }
 }
 .container_sF {
-    @include flex(row,nowrap,space-between,center,0rem);
+    @include flex(row,nowrap,space-between,normal,0rem);
+    overflow-x: hidden;
 
     .sFContainerLeft {
         margin: 2rem 3.5rem 2.8rem 8.3rem;
+        width: 100%;
 
         .container_storeFinderTop {
             width: 43.9rem;
@@ -62,7 +56,6 @@ $background-color_1: #323334;
         }
     }
     .map-responsive{
-        overflow:hidden;
         padding-bottom:50.25%;
         position:relative;
         height:0;
@@ -82,9 +75,11 @@ $background-color_1: #323334;
 }
 
 .bottomContainer{
+    height: auto;
+    gap: 3rem;
 
     .locationCard{
-        height: 30rem;
+        height: auto;
         @include flex(column,nowrap,space-evenly,normal,2.4rem);
         padding: 2.4rem 0px;
         border-bottom: 1px solid $color-borderLine;
@@ -115,7 +110,7 @@ $background-color_1: #323334;
         .container_btn{
                 display: flex;
                 flex-direction: row;
-                flex-wrap: nowrap;
+                flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
                 gap: 1.6rem;
@@ -124,14 +119,3 @@ $background-color_1: #323334;
         }
         
 }
-
-
-// .locationCard {
-// 	padding: 2.4rem;
-// }
-// .container_locationCardTitles {
-// 	padding: 0.8rem;
-// }
-
-// 
-// }
