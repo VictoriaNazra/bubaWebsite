@@ -29,31 +29,31 @@
 	.container{
 		width: 100%;
 		height: 100%;
-		padding-top: 8rem;
-		padding-bottom: 6.4rem;
-        @include flex(row,wrap,center,center,0rem);
+        @include flex(row,nowrap,center,center,0rem);
+        padding: 8rem 15rem 8rem 15rem;
+        max-width: 1140px;
 
         .container_aboutUsImg {
             img {
-                height: 46.8rem;
+                width: 100%;
                 border-radius: 13.5px;
+                max-width: 549px;
             }
         }
         .aboutUsInfo {
             border-radius: 13.6px;
-            @include flex(column,nowrap,center,center,0rem);
+            @include flex(column,nowrap,center,center,0px);
             padding-inline: 10rem;
 
             .container_aboutUsInfo {
-                height: 27rem;
-                width: 48.2rem;
-                @include flex(column,nowrap,space-evenly,center,0rem);
+                // height: 27rem;
+                // width: 48.2rem;
+                @include flex(column,nowrap,space-evenly,center,2rem);
             }
         }
 	}
 }
 .flipped {
-    flex-direction: row-reverse;
 	background-color: white;
 }
 

@@ -55,14 +55,15 @@ footer{
 
 // About us 
 .aboutUs {
-	.container{
+	
+  .container{
+    padding: 8rem 3.2rem 6.4rem 3.2rem;
         .container_aboutUsImg {
             img {
-              height: 19.3rem;
             }
         }
         .aboutUsInfo {
-          padding-inline: 3.6rem;
+          // padding-inline: 3.6rem;
 
             .container_aboutUsInfo {
               

@@ -68,16 +68,12 @@ footer{
 }
 
 // Our products (circulos)
+
 .ourProducts {
-    // display: block;
     padding-left: 1.6rem;
     padding-right: 0px;
-    // overflow: hiddenau;
-    // overflow-x: auto;
-    // justify-content: center;
 
     div{
-        // overflow: hidden;
 
         h2{
             width: 100%;
@@ -176,5 +172,44 @@ footer{
     }
 }
 
+// About us 
+
+.heroAboutUs {
+    display: none;
+	.container_hero {
+        
+        div {
+        }
+        p {
+        }
+        
+	}
+}
+
+.aboutUs {
+	.container{
+        flex-wrap: wrap;
+        padding: 0px;
+        &.flipped{
+            flex-direction: column-reverse;
+        }
+        
+        .container_aboutUsImg {
+            width: 100%;
+            
+
+            img {
+                border-radius: 0px;
+            }
+        }
+        .aboutUsInfo {
+
+            .container_aboutUsInfo {
+                padding: 4.6rem 1.6rem;
+            }
+        }
+	}
+
+}
 
 }
