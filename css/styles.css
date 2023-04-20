@@ -1255,16 +1255,17 @@ footer .container_footer .footerRight .IconFinderFooter li a img {
     padding: 2.4rem;
     gap: 2.4rem;
   }
-  /***************   Register Now ***************/
-  .registerNow {
-    background-position-x: -156px;
+  .heroAboutUs .container_hero div {
+    width: 10.5rem;
   }
-  .registerNow div {
-    padding-left: 11.2rem;
+  .heroAboutUs .container_hero p {
+    font-size: 5rem;
   }
-  /****************   About Us Page   ****************/
-  .container_aboutUsImg img {
+  .aboutUs .container .container_aboutUsImg img {
     height: 19.3rem;
+  }
+  .aboutUs .container .aboutUsInfo {
+    padding-inline: 3.6rem;
   }
 }
 @media (max-width: 375px) {

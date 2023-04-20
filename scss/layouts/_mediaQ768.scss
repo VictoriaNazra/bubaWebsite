@@ -144,26 +144,38 @@ footer{
 }
 
 
-    
-      /***************   Register Now ***************/
-    .registerNow {
-        background-position-x: -156px;
-    
+// About us 
+
+.heroAboutUs {
+	.container_hero {
         div {
-        padding-left: 11.2rem;
+            width: 10.5rem;
         }
-    }
-    
-      /****************   About Us Page   ****************/
-    .container_aboutUsImg img {
-        height: 19.3rem;
-    }
+        p {
+            font-size: 5rem;
+        }
+        
+	}
+}
+
+.aboutUs {
+	.container{
+        .container_aboutUsImg {
+            img {
+            height: 19.3rem;
+            }
+        }
+        .aboutUsInfo {
+        padding-inline: 3.6rem;
+
+            .container_aboutUsInfo {
+            
+            }
+        }
+	}
 
 
 
-    }
+}
 
-    
-    
-    
-    
+}
