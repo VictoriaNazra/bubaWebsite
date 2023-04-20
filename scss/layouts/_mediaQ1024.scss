@@ -27,7 +27,7 @@ footer{
   }
 }
 
-// Home ................................................
+// INDEX
 
 // Hero
 .heroHome{
@@ -48,32 +48,31 @@ footer{
   padding-left: 3.2rem;
   padding-right: 3.2rem;
   .container_productsCard {
-    // @include flex(row,nowrap,flex-start,center,2.4rem);
-    // .cardHidden {
-    //     display: none;
-    //   }
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2.4rem;
+    }
   }
-  
-.productsCard{
-  .cardImg{
-      }
-    }
-    }
 
-    /***************   Register Now ***************/
-    .registerNow {
-      background-position-x: -156px;
-  
-      div {
-        padding-left: 11.2rem;
-      }
-    }
-  
-    /****************   About Us Page   ****************/
-    .container_aboutUsImg img {
-      height: 19.3rem;
-    }
+// About us 
+.aboutUs {
+	.container{
+        .container_aboutUsImg {
+            img {
+              height: 19.3rem;
+            }
+        }
+        .aboutUsInfo {
+          padding-inline: 3.6rem;
 
+            .container_aboutUsInfo {
+              
+            }
+        }
+	}
+
+
+
+
+
+}
 }
