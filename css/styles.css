@@ -469,10 +469,11 @@ html {
   flex-grow: 1;
 }
 .productsCard .cardInfo .CardInfoElements {
+  height: 16rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: normal;
+  justify-content: space-around;
   align-items: center;
   gap: 1.4rem;
 }

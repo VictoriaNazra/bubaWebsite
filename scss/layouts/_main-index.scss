@@ -44,90 +44,48 @@
     @include flex(row, nowrap, center, center, 0px);
     width: 100%;
     height: 43.9rem;
-  
+
     div {
-      @include flex(column, nowrap, normal, center, 0rem);
-  
-      h2 {
+        @include flex(column, nowrap, normal, center, 0rem);
+
+        h2 {
         text-align: center;
         padding-bottom: 4.8rem;
-      }
-  
-      .container_ourProductsCard {
-        width: 61.41rem;
-        @include flex(row, nowrap, space-evenly, center, 0px);
-  
-        .ourProductsCard {
-          @include flex(column, nowrap, normal, center, 0px);
-  
-          .container_img {
-            outline: none;
-            border: none;
-            width: 13.3rem;
-            height: 13.3rem;
-            border-radius: 50%;
-            overflow: hidden;
-            
-            img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-
-              &.our-products-card-5{
-                width: 113%;
-                height: auto;
-                object-fit: cover;
-                transform: translateY(-23%);
-              }
-            }
-          }
         }
-      }
+    
+        .container_ourProductsCard {
+            width: 61.41rem;
+            @include flex(row, nowrap, space-evenly, center, 0px);
+    
+            .ourProductsCard {
+            @include flex(column, nowrap, normal, center, 0px);
+    
+            .container_img {
+                outline: none;
+                border: none;
+                width: 13.3rem;
+                height: 13.3rem;
+                border-radius: 50%;
+                overflow: hidden;
+                
+                img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+
+                &.our-products-card-5{
+                    width: 113%;
+                    height: auto;
+                    object-fit: cover;
+                    transform: translateY(-23%);
+                }
+                }
+            }
+            }
+        }
+        }
     }
-  }
 
-
-
-// Our products (circulos)
-// .ourProducts {
-//     background-color: $color-beigeLight;
-//     @include flex(row,nowrap,center,center,0px);
-//     width: 100%;
-//     height: 43.9rem;
-
-//     div{
-//         @include flex(column,nowrap,normal,center,0rem);
-
-//         h2{
-//             text-align: center;
-//             padding-bottom: 4.8rem;
-//         }
-
-//         .container_ourProductsCard{
-//             width: 61.41rem;
-//             @include flex(row,nowrap,space-evenly,center,0px);
-            
-//             .ourProductsCard{
-//                 @include flex(column,nowrap,normal,center,0px);
-
-//                 .container_img{
-//                     outline: none;
-//                     border: none;
-//                     width: 13.3rem;
-//                     padding: 0.5rem;
-
-//                     img{
-//                         width: 100%;
-//                         height: 100%;
-//                         border-radius: 50%;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
-
-// now trending
 .nowTrending_wrapper {
     background-color: $color-beige;
     width: 100%;
@@ -189,10 +147,8 @@
         flex-grow: 1;
 
         .CardInfoElements{
-            // width: 28.2rem;
-            // height: 12.81rem;
-            @include flex(column,wrap,normal,center,1.4rem);
-            // padding: 0px;
+            height: 16rem;
+            @include flex(column,wrap,space-around,center,1.4rem);
             
             .cardText{
                 height: 7rem;
