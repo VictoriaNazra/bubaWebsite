@@ -882,16 +882,22 @@ html {
 }
 .container_sF .sFContainerLeft {
   margin: 2rem 3.5rem 2.8rem 8.3rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0rem;
   width: 100%;
 }
-.container_sF .sFContainerLeft .container_storeFinderTop {
+.container_sF .container_storeFinderTop {
   width: 43.9rem;
   height: 3.29rem;
   width: 43.6rem;
   display: flex;
   flex-direction: row;
 }
-.container_sF .sFContainerLeft .container_storeFinderTop .container_searchBar {
+.container_sF .container_storeFinderTop .container_searchBar {
   width: 43.6rem;
   display: flex;
   flex-direction: row;
@@ -901,7 +907,7 @@ html {
   gap: 0rem;
   border-bottom: 1px solid #CDCDCD;
 }
-.container_sF .sFContainerLeft .container_storeFinderTop .container_searchBar .container_searchBar_left {
+.container_sF .container_storeFinderTop .container_searchBar .container_searchBar_left {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -909,14 +915,14 @@ html {
   align-items: center;
   gap: 0rem;
 }
-.container_sF .sFContainerLeft .container_storeFinderTop .container_searchBar .container_searchBar_left .iconSearchBar {
+.container_sF .container_storeFinderTop .container_searchBar .container_searchBar_left .iconSearchBar {
   width: 2.31rem;
   margin-right: 0.8rem;
 }
-.container_sF .sFContainerLeft .container_storeFinderTop .container_searchBar .container_searchBar_left .iconSearchBar img {
+.container_sF .container_storeFinderTop .container_searchBar .container_searchBar_left .iconSearchBar img {
   width: 100%;
 }
-.container_sF .sFContainerLeft .container_storeFinderTop .container_searchBar .container_searchBar_left form input {
+.container_sF .container_storeFinderTop .container_searchBar .container_searchBar_left form input {
   font-family: "Open Sans", sans-serif;
   line-height: 2.4rem;
   font-weight: 400;
@@ -924,18 +930,19 @@ html {
   color: #363030;
   border: none;
 }
-.container_sF .sFContainerLeft .container_storeFinderTop .container_searchBar .container_SBiconFilter {
+.container_sF .container_storeFinderTop .container_searchBar .container_SBiconFilter {
   width: 2.2rem;
 }
-.container_sF .sFContainerLeft .container_storeFinderTop .container_searchBar .container_SBiconFilter img {
+.container_sF .container_storeFinderTop .container_searchBar .container_SBiconFilter img {
   width: 100%;
 }
-.container_sF .map-responsive {
-  padding-bottom: 50.25%;
+
+.map-responsive {
   position: relative;
   height: 0;
+  width: 100%;
 }
-.container_sF .map-responsive .map-responsive iframe {
+.map-responsive .map-responsive iframe {
   left: 0;
   top: 0;
   height: 100%;
@@ -986,7 +993,7 @@ html {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 1.6rem;
   width: auto;
