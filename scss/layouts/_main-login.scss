@@ -1,4 +1,4 @@
-main{
+.mainLogin{
     @include flex(row,nowrap,center,normal,0rem);
 
     .container_form-e-img{
@@ -7,9 +7,11 @@ main{
         
         }
     
-        .container_loginLeft img {
-            width: 100%;
-            max-width: 649px;
+        .container_loginLeft{
+            img {
+                width: 100%;
+                max-width: 649px;
+            }
         }
         
         .container_loginForm{
