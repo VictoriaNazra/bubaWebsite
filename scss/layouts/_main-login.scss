@@ -1,7 +1,29 @@
-.container_loginLeft img {
-    width: 100%;
+main{
+    @include flex(row,nowrap,center,normal,0rem);
+
+    .container_form-e-img{
+        .container_loginRight{
+            max-width: 582px;
+        
+        }
+    
+        .container_loginLeft img {
+            width: 100%;
+            max-width: 649px;
+        }
+        
+        .container_loginForm{
+            width: 100%;
+            padding: 2rem 3rem;
+            }
+    
+    }
+
 }
 
-.container_loginForm{
-    width: 49.5rem;
-}
+
+
+
+
+
+
