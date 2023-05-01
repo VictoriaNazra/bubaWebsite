@@ -1468,6 +1468,27 @@ footer .container_footer .footerRight .IconFinderFooter li a img {
   .aboutUs .container .aboutUsInfo .container_aboutUsInfo {
     padding: 4.6rem 1.6rem;
   }
+  .mainLogin .container_form-e-img .container_loginRight .container_loginForm {
+    padding: 3.5rem 1.6rem 2rem 1.6rem;
+  }
+  .mainLogin .container_form-e-img .container_loginRight .container_loginForm h2 {
+    text-align: center;
+  }
+  .mainLogin .container_form-e-img .container_loginRight .container_loginForm h3 {
+    text-align: center;
+  }
+  .mainLogin .container_form-e-img .container_loginRight .container_loginForm .container_loginForm_data .container_casillerosParaInfo .mb-5 label {
+    font-weight: 600;
+  }
+  .mainLogin .container_form-e-img .container_loginRight .container_loginForm .container_loginForm_data .container_casillerosParaInfo .mb-5 div input {
+    font-size: 1.2rem;
+  }
+  .mainLogin .container_form-e-img .container_loginRight .container_loginForm .container_checkbox .form-check {
+    align-items: flex-start;
+  }
+  .mainLogin .container_form-e-img .container_loginRight .container_loginForm .container_checkbox .form-check input {
+    margin-top: 0.5rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

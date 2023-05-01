@@ -211,5 +211,59 @@ footer{
 
 }
 
+// Login
+
+.mainLogin{
+    .container_form-e-img{
+        .container_loginRight{
+            .container_loginForm{
+                padding: 3.5rem 1.6rem 2rem 1.6rem;
+                h2{
+                    text-align: center;
+                }
+                h3{
+                    text-align: center;
+                }
+            
+                .container_loginForm_data {
+                    .container_casillerosParaInfo{
+                        .mb-5{
+                            label{
+                                font-weight: 600;
+                            }
+                            div{
+                                input{
+                                    font-size: 1.2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+                .container_checkbox{
+                    .form-check {
+                        align-items: flex-start;
+                        input{
+                            margin-top: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
