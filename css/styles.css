@@ -1400,6 +1400,10 @@ footer .container_footer .footerRight .IconFinderFooter li a img {
   .findNearStore {
     padding: 1.6rem;
   }
+  .findNearStore .left {
+    padding: 3.2rem 3.2rem;
+    text-align: center;
+  }
   .findNearStore .right {
     display: none;
   }
@@ -1407,7 +1411,7 @@ footer .container_footer .footerRight .IconFinderFooter li a img {
     width: 100%;
   }
   .bookTable {
-    padding: 1.6rem;
+    padding: 3.2rem 1.6rem;
     gap: 1.6rem;
     flex-direction: column;
   }
@@ -1450,6 +1454,10 @@ footer .container_footer .footerRight .IconFinderFooter li a img {
   }
   .container_sF .sFContainerLeft {
     margin: 2rem 3.2rem 2.8rem 3.2rem;
+  }
+  .container_sF .sFContainerLeft .container_storeFinderTop .container_searchBar {
+    margin: 0rem 3.2rem 1rem 3.2rem;
+    padding: 2rem;
   }
   .heroAboutUs {
     display: none;

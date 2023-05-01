@@ -109,6 +109,10 @@ footer{
 
 .findNearStore{
     padding: 1.6rem;
+    .left{
+        padding: 3.2rem 3.2rem;
+        text-align: center;
+    }
     .right{
         display: none;
 
@@ -121,7 +125,7 @@ footer{
 // Book a table
 
 .bookTable {
-    padding: 1.6rem;
+    padding: 3.2rem 1.6rem;
     gap:1.6rem;
     flex-direction: column;
 
@@ -179,8 +183,16 @@ footer{
 
     .sFContainerLeft {
     margin: 2rem 3.2rem 2.8rem 3.2rem;
+
+        .container_storeFinderTop{
+            .container_searchBar{
+                margin: 0rem 3.2rem 1rem 3.2rem;
+                padding: 2rem;
+            }
+        }
     }
 }
+
 
 
 // About us 
