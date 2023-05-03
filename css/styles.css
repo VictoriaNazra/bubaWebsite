@@ -776,7 +776,6 @@ html {
 .container_shop {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
   grid-gap: 3.4rem;
 }
 .container_shop .containerLeft_shop {
@@ -1246,7 +1245,7 @@ footer .container_footer .footerRight .IconFinderFooter li a img {
   }
   .ourProducts {
     overflow: hidden;
-    justify-content: flex-start;
+    justify-content: center;
     padding-left: 2.4rem;
     padding-right: 2.4rem;
   }
@@ -1531,6 +1530,9 @@ footer .container_footer .footerRight .IconFinderFooter li a img {
   }
   .mainLogin .container_form-e-img .container_loginRight .container_loginForm .container_checkbox .form-check input {
     margin-top: 0.5rem;
+  }
+  .container_shop .containerLeft_shop .containerRight_shop .container_shopCategory .container_productsCards h3 {
+    display: none;
   }
   .container_shop .containerLeft_shop .containerRight_shop .container_shopCategory .container_productsCards .topRow .productsCard {
     min-width: 18rem;

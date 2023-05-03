@@ -274,6 +274,9 @@ footer{
     .containerRight_shop {
         .container_shopCategory {
             .container_productsCards {
+                h3{
+                    display: none;
+                }
                 .topRow {
                     .productsCard{
                     min-width: 18rem;
