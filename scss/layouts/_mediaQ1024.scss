@@ -69,4 +69,35 @@ footer{
   }
 }
 
+// Shop Page
+
+.container_shop {
+    grid-gap: 2.4rem;
+
+
+    .containerLeft_shop {
+      }
+    .containerRight_shop {
+        .container_shopCategory {
+            .container_productsCards {
+                .topRow {
+                  width: 100%;
+                  justify-content: flex-start;
+                  padding-left: 2.4rem;
+
+                  .productsCard{
+                    min-width: 24.6rem;
+                    max-width: 25.2rem
+                  }
+                }
+            }
+        }
+        
+    }
+  }
+
+
+
 }
+
+
