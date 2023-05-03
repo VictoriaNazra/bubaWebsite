@@ -98,6 +98,7 @@ footer{
         .container_ourProductsCard{
             width: 61.41rem;
             @include flex(row,nowrap,space-evenly,center,0px);
+            padding-left: 0rem;
             
             .ourProductsCard{
                 @include flex(column,nowrap,normal,center,0px);

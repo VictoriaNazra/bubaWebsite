@@ -34,6 +34,7 @@
 
             .container_productsCards {
                 @include flex(column,nowrap,flex-start,flex-start,0rem);
+                padding-left: 3.2rem;
                 h3 {
                     padding-bottom: 4rem;
                 }

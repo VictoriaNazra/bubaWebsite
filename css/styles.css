@@ -824,6 +824,7 @@ html {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 0rem;
+  padding-left: 3.2rem;
 }
 .container_shop .containerRight_shop .container_shopCategory .container_productsCards h3 {
   padding-bottom: 4rem;
@@ -1269,6 +1270,7 @@ footer .container_footer .footerRight .IconFinderFooter li a img {
     justify-content: space-evenly;
     align-items: center;
     gap: 0px;
+    padding-left: 0rem;
   }
   .ourProducts div .container_ourProductsCard .ourProductsCard {
     display: flex;
