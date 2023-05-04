@@ -833,7 +833,7 @@ html {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 2.4rem;
   width: 100%;
@@ -1173,11 +1173,10 @@ footer .container_footer .footerRight .IconFinderFooter li a img {
   .container_shop .containerRight_shop .container_shopCategory .container_productsCards .topRow {
     width: 100%;
     justify-content: flex-start;
-    padding-left: 2.4rem;
+    padding-left: 0rem;
   }
   .container_shop .containerRight_shop .container_shopCategory .container_productsCards .topRow .productsCard {
-    min-width: 24.6rem;
-    max-width: 25.2rem;
+    max-width: 23.2rem;
   }
 }
 @media (max-width: 768px) {
